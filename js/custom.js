@@ -28,7 +28,8 @@
       );
     }
   });
-  // Dropdown menu
+
+  // DROPDOWN MENU
   $(function () { // Dropdown toggle
     $('.lang__toggle').click(function () {
       $(this).next('.menu__lang').slideToggle();
@@ -42,16 +43,9 @@
     });
   });
 
-
-  $(".news__list-box").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    prevArrow: '.arrow__prev',
-    nextArrow: '.arrow__next',
-  });
-
+  $(".statistic__container-number").counterUp({
+    delay: 10,
+    time: 1000
+  })
 
 })(window.jQuery);
-
-// $(function () {});

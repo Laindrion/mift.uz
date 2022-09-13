@@ -11,35 +11,35 @@ https://templatemo.com/tm-575-leadership-event
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #0dcaf0;
-  --secondary-color:              #0d6efd;
-  --section-bg-color:             #f0f8ff;
-  --dark-color:                   #000000;
-  --navbar-bg-color:              #273053;
-  --p-color:                      #717275;
-  --highlight-icon-color:         #ff0100;
+  --white-color: #ffffff;
+  --primary-color: #0dcaf0;
+  --secondary-color: #0d6efd;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --navbar-bg-color: #273053;
+  --p-color: #717275;
+  --highlight-icon-color: #ff0100;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: 'DM Sans', sans-serif;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               16px;
-  --copyright-text-font-size:     16px;
+  --h1-font-size: 62px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 16px;
+  --copyright-text-font-size: 16px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
 
 
@@ -105,7 +105,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -161,15 +161,15 @@ strong {
   left: -10px;
 }
 
-.avatar-image-left + .avatar-image-left {
+.avatar-image-left+.avatar-image-left {
   left: -20px;
 }
 
-.avatar-image-left + .avatar-image-left + .avatar-image-left {
+.avatar-image-left+.avatar-image-left+.avatar-image-left {
   left: -30px;
 }
 
-.avatar-image-left + .avatar-image-left + .avatar-image-left + .avatar-image-left {
+.avatar-image-left+.avatar-image-left+.avatar-image-left+.avatar-image-left {
   left: -40px;
 }
 
@@ -178,6 +178,10 @@ strong {
   vertical-align: top;
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+}
 
 /*---------------------------------------
   CUSTOM ICON               
@@ -222,7 +226,7 @@ strong {
   border-top-color: var(--primary-color);
   border-right-color: var(--primary-color);
   border-bottom-color: var(--primary-color);
-  transition: border-top-color .15s linear,border-right-color .15s linear .1s,border-bottom-color .15s linear .2s;
+  transition: border-top-color .15s linear, border-right-color .15s linear .1s, border-bottom-color .15s linear .2s;
 }
 
 .custom-icon:hover::after {
@@ -230,7 +234,7 @@ strong {
   border-left-width: 2px;
   border-right-width: 2px;
   transform: rotate(270deg);
-  transition: transform .4s linear 0s,border-left-width 0s linear .35s;
+  transition: transform .4s linear 0s, border-left-width 0s linear .35s;
 }
 
 
@@ -268,7 +272,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .navbar-nav .nav-link.custom-btn:hover {
   background: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--white-color);
 }
 
@@ -320,7 +324,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
@@ -478,9 +482,10 @@ strong {
 .hero {
   position: relative;
   height: calc(90vh - 84px);
+  height: 100vh;
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
   position: absolute;
@@ -489,7 +494,7 @@ strong {
   bottom: 0;
   left: 0;
   margin-bottom: -5px;
-}
+} */
 
 .hero-text {
   position: absolute;
@@ -501,16 +506,16 @@ strong {
 }
 
 .hero .arrow-icon {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.video-wrap {
+.img-wrap {
   z-index: -100;
 }
 
-.custom-video {
+.custom-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -560,7 +565,7 @@ strong {
 
 .speakers-info {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -637,63 +642,6 @@ strong {
 
 
 /*---------------------------------------
-  SCHEDULE              
------------------------------------------*/
-.nav-tabs {
-  border-bottom: 0;
-}
-
-.nav-tabs .nav-link,
-.nav-tabs .nav-link span {
-  display: block;
-  text-align: left;
-}
-
-.nav-tabs .nav-link span {
-  display: block;
-}
-
-.nav-tabs .nav-link small {
-  display: block;
-  font-size: 18px;
-  font-weight: normal;
-  color: var(--p-color);
-}
-
-.nav-tabs .nav-link {
-  background: var(--white-color);
-  border-radius: 0;
-  border: 0;
-  border-left: 3px solid var(--section-bg-color);
-  padding: 20px 30px;
-  transition: all 0.3s;
-  width: 25%;
-}
-
-.nav-tabs .nav-link:first-child {
-  border-left-color: transparent;
-}
-
-.nav-tabs .nav-item.show .nav-link, 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
-.nav-tabs .nav-link:hover {
-  border-left-color: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-}
-
-.nav-tabs .nav-link.active h3,
-.nav-tabs .nav-link:focus h3, 
-.nav-tabs .nav-link:hover h3 {
-  color: var(--primary-color);
-}
-
-.schedule-image {
-  border-radius: 20px;
-}
-
-
-/*---------------------------------------
   CALL TO ACTION              
 -----------------------------------------*/
 .call-to-action {
@@ -746,6 +694,11 @@ strong {
   padding: 40px;
 }
 
+.pricing-body-1 {
+  padding: 40px;
+  background-color: var(--navbar-bg-color);
+}
+
 .pricing-title-wrap {
   background: var(--navbar-bg-color);
   padding: 20px 40px;
@@ -755,6 +708,10 @@ strong {
   color: var(--white-color);
 }
 
+.pricing-title-wrap-1 {
+  background-color: #fff;
+  padding: 20px 40px;
+}
 
 /*---------------------------------------
   VENUE               
@@ -934,7 +891,7 @@ strong {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 1500px) {
-   .speakers-text-info {
+  .speakers-text-info {
     padding: 50px;
   }
 }
@@ -971,6 +928,11 @@ strong {
   }
 
   .custom-btn {
+    font-size: var(--copyright-text-font-size);
+    padding: 8px 16px;
+  }
+
+  .custom-btn-1 {
     font-size: var(--copyright-text-font-size);
     padding: 8px 16px;
   }
@@ -1053,4 +1015,3 @@ strong {
     justify-content: center;
   }
 }
-
