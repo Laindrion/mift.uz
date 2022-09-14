@@ -31,6 +31,19 @@
 
   // DROPDOWN MENU
   $(function () { // Dropdown toggle
+    $('.dropdown__link-1').click(function () {
+      $(this).next('.menu__list').slideToggle();
+    });
+
+    $(document).click(function (e) {
+      var target = e.target;
+      if (!$(target).is('.dropdown__link-1') && !$(target).parents().is('.dropdown__link-1'))
+      //{ $('.dropdown').hide(); }
+      { $('.menu__list').slideUp(); }
+    });
+  });
+
+  $(function () { // Dropdown toggle
     $('.lang__toggle').click(function () {
       $(this).next('.menu__lang').slideToggle();
     });
