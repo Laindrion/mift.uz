@@ -601,7 +601,7 @@ body {
 /*---------------------------------------
   CALL TO ACTION              
 -----------------------------------------*/
-.call-to-action {
+.links {
   background-image: url('../images/terren-hurst-blgOFmPIlr0-unsplash.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -610,7 +610,7 @@ body {
   position: relative;
 }
 
-.call-to-action::after {
+.links::after {
   content: "";
   background: rgba(0, 0, 0, 0.45);
   position: absolute;
@@ -619,21 +619,6 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-}
-
-.call-to-action .row {
-  position: relative;
-  z-index: 2;
-}
-
-.call-to-action .custom-btn {
-  background: var(--white-color);
-  color: var(--dark-color);
-}
-
-.call-to-action .custom-btn:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
 }
 
 
