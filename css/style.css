@@ -36,26 +36,24 @@ p {
     height: 60px;
 }
 
-.dropdown-1:hover {
-    background-color: rgba(13, 202, 240, .2);
-}
-
 .menu__list {
     position: absolute;
     left: 0;
     top: calc(100%);
     border-radius: 2.5px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     background-color: #273e9d;
     margin: 0;
     padding: 0;
     box-shadow: 2px 2px 0 2px rgba(0, 0, 0, .3);
-    transition: .6s all;
+    transition: .4s all;
     transition-delay: 250ms;
 }
 
 .dropdown-1:hover .menu__list {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu__list-item+.menu__list-item {
@@ -79,6 +77,12 @@ p {
     height: 10px;
     background-color: #fff;
     clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+    /* transform: rotate(180deg); */
+    transition: .3s all;
+}
+
+.dropdown-1:hover:after {
+    transform: rotate(180deg);
 }
 
 .glasses {
@@ -239,8 +243,11 @@ p {
     background-color: #000;
     opacity: .6;
     border-radius: 10px;
+    transition: .5s;
+}
 
-
+.recent__item:hover .recent__overlay:after {
+    opacity: .4;
 }
 
 .recent__item {
@@ -260,6 +267,7 @@ p {
 .recent__img {
     max-width: 450px;
     width: 100%;
+    min-height: 277px;
     border-radius: 10px;
     box-shadow: -8px 4px 8px 0px rgb(34 60 80 / 20%);
     z-index: inherit;
@@ -302,7 +310,7 @@ p {
     z-index: 7;
 }
 
-.recent__btn:hover {
+.recent__item:hover .recent__btn {
     background-color: #0dcaf0;
     color: #fff;
     opacity: 1;
@@ -402,8 +410,41 @@ p {
 }
 
 /* MAP */
-.uzb__map {
-    max-width: 1200px;
+/* svg path:hover {
+    background-color: #fff;
+} */
+
+.uzb__map svg path {
+    /* fill: #00394f; */
+    height: 652px;
+    stroke: #eee;
+    stroke-width: .25;
+    width: 1000px;
+}
+
+.uzb__map svg path:hover {
+    fill: #C7C7C7;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.region__container {
+    position: absolute;
+    right: 0;
+    height: 0;
+}
+
+.venue-thumb {
+    position: absolute;
+    right: 50%;
+}
+
+.venue-info-body {
+    padding-right: 50px;
+}
+
+.text-white {
+    font-size: 30px;
 }
 
 /* CONTACT */
@@ -453,12 +494,14 @@ p {
 .links__slider-link {
     font-size: 16px;
 }
+
 .links__slider-box .slick-dots {
     position: absolute;
     display: flex;
     right: 0;
     top: -4rem;
 }
+
 .links__slider-box .slick-dots li button {
     position: relative;
     display: block;
@@ -473,7 +516,8 @@ p {
     height: 20px;
     padding: 5px;
 }
-.links__slider-box .slick-dots .slick-active{
+
+.links__slider-box .slick-dots .slick-active {
     opacity: .6;
 }
 
