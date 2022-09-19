@@ -49,7 +49,7 @@
 
   $('.links__slider-box').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 4,

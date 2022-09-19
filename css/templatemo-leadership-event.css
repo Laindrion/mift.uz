@@ -635,7 +635,10 @@ body {
 .pricing-body {
   padding: 40px;
 }
-
+.pricing-body{
+  /* background-color: #fff; */
+  min-height: 456px;
+}
 .pricing-body-1 {
   padding: 40px;
   background-color: var(--navbar-bg-color);
