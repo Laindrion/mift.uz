@@ -99,12 +99,6 @@ p {
   font-weight: var(--font-weight-normal);
 }
 
-/* ul li {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
-} */
-
 a,
 button {
   touch-action: manipulation;
@@ -436,22 +430,6 @@ body {
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
-.hero {
-  position: relative;
-  height: calc(90vh - 84px);
-  height: 90vh;
-}
-
-.hero::after {
-  content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-bottom: -5px;
-}
 
 .hero-text {
   position: absolute;
@@ -635,10 +613,12 @@ body {
 .pricing-body {
   padding: 40px;
 }
-.pricing-body{
+
+.pricing-body {
   /* background-color: #fff; */
   min-height: 456px;
 }
+
 .pricing-body-1 {
   padding: 40px;
   background-color: var(--navbar-bg-color);
