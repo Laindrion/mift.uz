@@ -82,7 +82,6 @@ p {
     height: 10px;
     background-color: #fff;
     clip-path: polygon(50% 100%, 0 50%, 100% 50%);
-    /* transform: rotate(180deg); */
     transition: .3s all;
 }
 
@@ -152,7 +151,7 @@ p {
 /* HEADER */
 .hero {
     height: calc(90vh - 84px);
-    height: 90vh;
+    height: 89vh;
     z-index: 1;
     display: flex;
     object-fit: cover;
@@ -168,40 +167,49 @@ p {
     left: 0;
     margin-bottom: -5px;
 } */
+.news__wrapper {
+    height: 88vh;
+    max-width: 700px;
+    background-color: rgb(11, 115, 206);
+    display: flex;
+    flex-direction: column;
+}
 
 .news__box {
-    height: 90vh;
-    max-width: 960px;
-    background-color: #00539CFF;
+    margin-top: 80px;
 }
 
 .news__item {
     max-width: 1000px;
-    height: 322px;
+    height: 690px;
+    text-align: left;
 }
 
 .news__container {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .news__title {
     color: #fff;
     margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 30px;
+    max-width: 500px;
+    letter-spacing: 5px;
+    line-height: 50px;
+    margin-bottom: 30px;
 }
 
 .news__img-box {
-    width: 1000px;
-    
+    width: 100%;
+    overflow: hidden;
 }
 
-/* .news__img-box {
-
-} */
 
 .news__img-item {
     background-repeat: no-repeat;
     background-size: cover, cover;
+    background-position: center center;
+    object-fit: cover;
     width: 100%;
     height: 90vh;
 }
@@ -226,6 +234,41 @@ p {
     opacity: 1;
 }
 
+.arrows__container {
+    bottom: 10px;
+    padding: 20px 10px 20px 10px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.arrow__prev, .arrow__next {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.arrow__prev {
+    margin-right: 5px;
+}
+
+.arrow__next {
+    margin-left: 5px;
+}
+
+.arrow__prev-cover, .arrow__next-cover {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slick-arrow:hover {
+    opacity: .8;
+}
 
 /* Statistic */
 .about {

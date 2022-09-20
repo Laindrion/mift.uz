@@ -44,13 +44,16 @@
   $('.news__box').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: $('.arrow__prev-cover'),
+    nextArrow: $('.arrow__next-cover'),
     asNavFor: '.news__img-box'
   })
   $('.news__img-box').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    asNavFor: '.news__box'
+    asNavFor: '.news__box',
+    fade: true
   })
 
   // Statistics Counter
