@@ -61,7 +61,7 @@
   // Statistics Counter
   $('.statistic__container-number').counterUp({
     delay: 10,
-    time: 1000
+    time: 2000
   })
 
   // SLider of Benefit links 
@@ -71,6 +71,7 @@
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 4,
-    arrows: false
+    arrows: false,
+
   })
 })(window.jQuery);
