@@ -16,7 +16,7 @@ https://templatemo.com/tm-575-leadership-event
   --secondary-color: #CAEBF2;
   --section-bg-color: #f0f8ff;
   --dark-color: #000000;
-  --navbar-bg-color: #0B0C10;
+  --navbar-bg-color: #5b69d6;
   --p-color: #717275;
   --highlight-icon-color: #ff0100;
 
@@ -40,14 +40,9 @@ https://templatemo.com/tm-575-leadership-event
 html,
 body {
   height: 100vh;
-  background-color: #F2F4FB;
+  background-color: #fff;
+  font-family: 'Comfortaa', cursive;
 }
-
-body {
-  background: var(--white-color);
-  font-family: var(--body-font-family);
-}
-
 
 /*---------------------------------------
   TYPOGRAPHY               
