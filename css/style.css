@@ -1,3 +1,7 @@
+html {
+    /* body won't work ¯\_(ツ)_/¯ */
+}
+
 /* Header */
 ul,
 li {
@@ -36,6 +40,10 @@ p {
     height: 60px;
 }
 
+.navbar {
+    box-shadow: 0px 19px 33px -5px rgba(34, 60, 80, 0.2);
+}
+
 .navbar a, .navbar-collapse a {
     color: #fff;
     transition: .3s;
@@ -61,7 +69,7 @@ p {
     margin: 0;
     padding: 0;
     box-shadow: 2px 2px 0 2px rgba(0, 0, 0, .3);
-    transition: .4s all;
+    transition: visibility 0.1s, opacity 0.5s;
     transition-delay: 250ms;
     text-align: center;
     border-radius: 30px;
@@ -163,19 +171,19 @@ p {
     padding-right: 30px;
 }
 
-/* HEADER */
+/* SECTION HERO */
 .hero {
     /* height: calc(90vh - 84px); */
-    height: 100vh;
     z-index: 1;
     display: flex;
     object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .news__wrapper {
     height: 90vh;
     max-width: 700px;
-    background-color: #5b69d6;
+    background-color: #428BA5;
     display: flex;
     flex-direction: column;
 }
@@ -192,18 +200,18 @@ p {
 }
 
 .news__container {
-    margin-top: 45px;
+    margin-top: 90px;
     margin-left: 20px;
 }
 
 .news__title {
     color: #fff;
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 27px;
     max-width: 600px;
     letter-spacing: 5px;
     line-height: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .news__img-box {
@@ -319,7 +327,7 @@ p {
     opacity: .8;
 }
 
-/* Statistic */
+/* STATISTICS OR ABOUT */
 .about {
     padding-top: 50px;
 }
@@ -397,7 +405,7 @@ p {
     height: 6px;
 }
 
-/* interactive */
+/* PRICING OR INTERACTIVE */
 .pricing .row {
     min-width: 1600px;
 }
@@ -442,9 +450,18 @@ p {
 .btn__interactive {
     background-color: #fff;
     color: #000;
+    background-color: #285ff6;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #fff;
 }
 
-/* MAP */
+.btn__interactive:hover {
+    opacity: .7;
+    color: #fff;
+}
+
+/* UZBEKISTAN MAP OR VENUE*/
 .uzb__map-title {
     font-size: 50px;
 }
@@ -486,6 +503,10 @@ p {
 /* CONTACT */
 .contact {
     margin-bottom: 50px;
+}
+
+.submit__btn {
+    background-color: #285ff6;
 }
 
 /* LINKS */
@@ -570,4 +591,24 @@ p {
     content: '•';
     text-align: center;
     color: #0dcaf0;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgba(0, 0, 0, 0.194);
+}
+
+.footer__logo-wrapper {
+    display: block;
+    max-width: 500px;
+    height: 100px;
+
+}
+
+.footer__logo {
+    width: 100%;
+}
+
+.footer__info {
+    display: flex;
 }

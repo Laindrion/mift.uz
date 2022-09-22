@@ -47,7 +47,9 @@
     prevArrow: $('.arrow__prev-cover'),
     nextArrow: $('.arrow__next-cover'),
     asNavFor: '.news__img-box',
-    speed: 300
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 5000,
   }).slickAnimation();
   $('.news__img-box').slick({
     slidesToShow: 1,
@@ -59,10 +61,10 @@
   })
 
   // Statistics Counter
-  // $('.statistic__container-number').counterUp({
-  //   delay: 10,
-  //   time: 2000
-  // })
+  $('.statistic__container-number').counterUp({
+    delay: 10,
+    time: 2000
+  })
 
   // SLider of Benefit links 
   $('.links__slider-box').slick({
@@ -72,6 +74,15 @@
     slidesToShow: 5,
     slidesToScroll: 4,
     arrows: false,
-
+    autoplay: true,
+    autoplaySpeed: 3000,
   })
+
+  $.scrollify({
+    section: ".hero",
+    section: ".pricing",
+    section: ".about",
+    section: ".contact",
+    section: ".links",
+  });
 })(window.jQuery);

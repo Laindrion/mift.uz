@@ -16,7 +16,7 @@ https://templatemo.com/tm-575-leadership-event
   --secondary-color: #CAEBF2;
   --section-bg-color: #f0f8ff;
   --dark-color: #000000;
-  --navbar-bg-color: #5b69d6;
+  --navbar-bg-color: #428BA5;
   --p-color: #717275;
   --highlight-icon-color: #ff0100;
 
@@ -42,6 +42,7 @@ body {
   height: 100vh;
   background-color: #fff;
   font-family: 'Comfortaa', cursive;
+  scroll-behavior: smooth;
 }
 
 /*---------------------------------------
@@ -369,7 +370,7 @@ body {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--primary-color);
+  background: #285ff6;
   border-radius: 100px;
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
@@ -379,34 +380,30 @@ body {
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
-  background: var(--navbar-bg-color);
+  opacity: .7;
 }
 
 
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
-.site-footer {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.site-footer .navbar-brand {
-  color: var(--primary-color);
-}
-
-.site-footer .social-icon-link {
+.social-icon-link {
   font-size: var(--h6-font-size);
   width: 50px;
   height: 50px;
   line-height: 50px;
 }
 
-.site-footer .copyright-text {
+.copyright-text {
   font-size: var(--copyright-text-font-size);
 }
 
-.footer-menu {
+.footer__menu {
   margin: 0;
   padding: 0;
 }
