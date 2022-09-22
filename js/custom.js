@@ -59,10 +59,10 @@
   })
 
   // Statistics Counter
-  $('.statistic__container-number').counterUp({
-    delay: 10,
-    time: 2000
-  })
+  // $('.statistic__container-number').counterUp({
+  //   delay: 10,
+  //   time: 2000
+  // })
 
   // SLider of Benefit links 
   $('.links__slider-box').slick({
