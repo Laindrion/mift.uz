@@ -46,18 +46,20 @@
     slidesToScroll: 1,
     prevArrow: $('.arrow__prev-cover'),
     nextArrow: $('.arrow__next-cover'),
-    asNavFor: '.news__img-box'
-  })
+    asNavFor: '.news__img-box',
+    speed: 300
+  }).slickAnimation();
   $('.news__img-box').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.news__box',
-    fade: true
+    fade: true,
+    speed: 300
   })
 
   // Statistics Counter
-  $(".statistic__container-number").counterUp({
+  $('.statistic__container-number').counterUp({
     delay: 10,
     time: 1000
   })
