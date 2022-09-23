@@ -288,7 +288,7 @@ body {
   VENUE               
 -----------------------------------------*/
 .venue {
-  /* background: var(--section-bg-color); */
+  background: var(--section-bg-color);
 }
 
 .venue-thumb {
@@ -548,7 +548,7 @@ body {
   }
 
   .navbar-brand {
-    font-size: 16px;
+    padding-left: 40px;
   }
 
   .custom-btn {

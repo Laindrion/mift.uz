@@ -1,6 +1,20 @@
 (function ($) {
   "use strict";
 
+  // SCROLL
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show')
+      }
+    }))
+  })
+  const hiddenElements = document.querySelectorAll('.hidden')
+  hiddenElements.forEach((el) => observer.observe(el))
+
   // NAVBAR
   $(".navbar-nav .nav-link").click(function () {
     $(".navbar-collapse").collapse("hide");
@@ -61,10 +75,10 @@
   })
 
   // Statistics Counter
-  $('.statistic__container-number').counterUp({
-    delay: 10,
-    time: 2000
-  })
+  // $('.statistic__container-number').counterUp({
+  //   delay: 10,
+  //   time: 2000
+  // })
 
   // SLider of Benefit links 
   $('.links__slider-box').slick({
@@ -77,12 +91,4 @@
     autoplay: true,
     autoplaySpeed: 3000,
   })
-
-  $.scrollify({
-    section: ".hero",
-    section: ".pricing",
-    section: ".about",
-    section: ".contact",
-    section: ".links",
-  });
 })(window.jQuery);

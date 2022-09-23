@@ -1,5 +1,11 @@
 html {
-    /* body won't work ¯\_(ツ)_/¯ */
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 /* Header */
@@ -20,6 +26,10 @@ h5 {
     padding: 0;
 }
 
+h2 {
+    color: #50abcb;
+}
+
 p {
     padding: 0;
     margin: 0;
@@ -29,32 +39,40 @@ p {
 .logo {
     width: 100%;
     height: 70px;
+    margin-left: 40px;
 }
 
-/* Menu */
-.dropdown-1 {
+/* MENU */
+.dropdown {
     position: relative;
-    cursor: pointer;
+    display: inline-block;
     transition: 0.6s all;
     border-radius: 5px;
-    height: 60px;
 }
 
 .navbar {
     box-shadow: 0px 19px 33px -5px rgba(34, 60, 80, 0.2);
 }
 
-.navbar a, .navbar-collapse a {
+.navbar a, .navbar-collapse a, .navbar a:focus, .navbar-collapse a:focus {
     color: #fff;
     transition: .3s;
 }
 
-.navbar a:hover {
-    color: #fff;
-    opacity: .7;
+.navbar-collapse {
+    padding-right: 200px;
 }
 
-.navbar-collapse a:hover {
+.navbar .nav-item:nth-child(2) {
+    padding-left: 20px;
+}
+
+.navbar .nav-item:nth-child(3) {
+    padding-left: 20px;
+}
+
+.navbar a:hover, .navbar-collapse a:hover {
+    color: #fff;
     opacity: .7;
 }
 
@@ -65,20 +83,23 @@ p {
     border-radius: 2.5px;
     visibility: hidden;
     opacity: 0;
-    background-color: #2b42aa;
-    margin: 0;
-    padding: 0;
-    box-shadow: 2px 2px 0 2px rgba(0, 0, 0, .3);
+    background-color: #446fb9;
+    box-shadow: 9px 12px 16px 17px rgba(34, 60, 80, 0.2);
     transition: visibility 0.1s, opacity 0.5s;
     transition-delay: 250ms;
     text-align: center;
     border-radius: 30px;
-    overflow: hidden;
 }
 
-.dropdown-1:hover .menu__list {
+.dropdown:hover .menu__list {
     opacity: 1;
     visibility: visible;
+}
+
+.menu__list-item {
+    display: block;
+    border-radius: 30px;
+    /* overflow: hidden; */
 }
 
 .menu__list-link {
@@ -93,9 +114,10 @@ p {
 .menu__list-link:hover {
     background-color: #4461db;
     color: #fff;
+
 }
 
-.dropdown-1::after {
+.dropdown::after {
     content: '';
     display: block;
     position: relative;
@@ -108,10 +130,53 @@ p {
     transition: .3s all;
 }
 
-.dropdown-1:hover:after {
+.dropdown:hover:after {
     transform: rotate(180deg);
 }
 
+/* SUB MENU */
+.sub-menu {
+    position: absolute;
+    background-color: #446fb9;
+    width: 300px;
+    top: -30px;
+    right: -300px;
+    box-shadow: -10px 9px 14px 10px rgba(34, 60, 80, 0.2);
+    visibility: 0;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.5s;
+}
+
+.dropdown-2 {
+    display: flex;
+    position: relative;
+}
+
+.sub-menu__link {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-2:hover .sub-menu {
+    visibility: 1;
+    opacity: 1;
+}
+
+.dropdown-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    transition: .3s all;
+    z-index: 2;
+}
+
+/* OTHER CONTENT */
 .glasses {
     width: 50px;
     height: 10px;
@@ -150,14 +215,16 @@ p {
 
 .menu__lang {
     position: absolute;
-    background: #273053;
+    background: #446fb9;
     display: none;
     width: 100px;
     top: 30px;
+    border-radius: 10px;
+    box-shadow: -6px 6px 21px 1px rgba(34, 60, 80, 0.2);
+
 }
 
 .menu__lang-item {
-    padding-right: 30px;
     font-size: 16px;
 }
 
@@ -166,9 +233,28 @@ p {
 }
 
 .menu__lang-link {
+    display: block;
     color: #fff;
-    padding-left: 6px;
+    padding-left: 10px;
     padding-right: 30px;
+}
+
+.header__input-wrapper {
+    display: none;
+}
+
+/* HIDDEN AND SHOW */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
 }
 
 /* SECTION HERO */
@@ -233,7 +319,7 @@ p {
 .news__btn {
     padding: 10px 20px;
     padding-right: 30px;
-    background-color: #285ff6;
+    background-color: #5d5ae5;
     color: #fff;
     border-radius: 5px;
     transition: .5s;
@@ -258,7 +344,7 @@ p {
 
 .news__btn:hover {
     /* background-color: #2aabe4; */
-    background-color: #285ff6;
+    background-color: #5d5ae5;
     color: #fff;
     opacity: .7;
 }
@@ -325,6 +411,135 @@ p {
 
 .slick-arrow:hover {
     opacity: .8;
+}
+
+
+/* PRICING OR INTERACTIVE */
+.pricing .row {
+    min-width: 1600px;
+}
+
+.interactive__title {
+    max-width: 875px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.interactive__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1545px;
+}
+
+.interactive__item {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.interactive__item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.interactive__item:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.interactive__item:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+.interactive__item {
+    margin-right: 50px;
+}
+
+.interactive__img {
+    max-width: 90px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.pricing__body-text--wrapper {
+    height: 220px;
+}
+
+.pricing-body__title {
+    font-size: 20px;
+    height: 80px;
+}
+
+.btn__interactive {
+    background-color: #fff;
+    background-color: #5d5ae5;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.btn__interactive:hover {
+    opacity: .7;
+    color: #fff;
+}
+
+/* UZBEKISTAN MAP OR VENUE*/
+.uzb__map {}
+
+#UZB372 {
+    animation: pen 2s infinite ease;
+
+}
+
+@keyframes pen {
+    0% {
+        fill: #7c7c7c;
+    }
+
+    50% {
+        fill: #C7C7C7;
+    }
+
+    100% {
+        fill: #7c7c7c;
+    }
+}
+
+.uzb__map-title {
+    font-size: 50px;
+}
+
+.uzb__map svg path {
+    /* fill: #00394f; */
+    height: 652px;
+    stroke: #eee;
+    fill: #7c7c7c;
+    stroke-width: .25;
+    width: 1000px;
+    transition: .6s all;
+}
+
+.uzb__map svg path:hover {
+    fill: #C7C7C7;
+    cursor: pointer;
+}
+
+.region__container {
+    position: relative;
+    right: 0;
+    height: 0;
+}
+
+.venue-thumb {
+    position: absolute;
+    right: 0;
+    top: -6rem;
+}
+
+.venue-info-body {
+    padding-right: 50px;
+}
+
+.text-white {
+    font-size: 30px;
 }
 
 /* STATISTICS OR ABOUT */
@@ -403,101 +618,6 @@ p {
 
 .statistic__container-item:hover::after {
     height: 6px;
-}
-
-/* PRICING OR INTERACTIVE */
-.pricing .row {
-    min-width: 1600px;
-}
-
-.interactive__title {
-    max-width: 875px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.interactive__wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1545px;
-}
-
-.interactive__item {
-    max-width: 330px;
-    margin: 0 auto;
-}
-
-.interactive__item {
-    margin-right: 50px;
-}
-
-.interactive__img {
-    max-width: 90px;
-    height: 80px;
-    margin: 0 auto;
-}
-
-.pricing__body-text--wrapper {
-    height: 220px;
-}
-
-.pricing-body__title {
-    font-size: 20px;
-    height: 80px;
-}
-
-.btn__interactive {
-    background-color: #fff;
-    color: #000;
-    background-color: #285ff6;
-    padding: 10px 20px;
-    border-radius: 40px;
-    color: #fff;
-}
-
-.btn__interactive:hover {
-    opacity: .7;
-    color: #fff;
-}
-
-/* UZBEKISTAN MAP OR VENUE*/
-.uzb__map-title {
-    font-size: 50px;
-}
-
-.uzb__map svg path {
-    /* fill: #00394f; */
-    height: 652px;
-    stroke: #eee;
-    stroke-width: .25;
-    width: 1000px;
-}
-
-.uzb__map svg path:hover {
-    fill: #C7C7C7;
-    transition: .6s;
-    cursor: pointer;
-}
-
-.region__container {
-    position: relative;
-    right: 0;
-    height: 0;
-}
-
-.venue-thumb {
-    position: absolute;
-    right: 0;
-    top: -6rem;
-}
-
-.venue-info-body {
-    padding-right: 50px;
-}
-
-.text-white {
-    font-size: 30px;
 }
 
 /* CONTACT */
@@ -611,4 +731,20 @@ p {
 
 .footer__info {
     display: flex;
+}
+
+.footer__btn {
+    border: 1px solid #4b49b7;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 5px;
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer__btn:hover {
+    border: 1px solid #5d5ae5;
 }
