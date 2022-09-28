@@ -150,7 +150,7 @@ body {
 -----------------------------------------*/
 .navbar {
   height: 10vh;
-  /* border-bottom: 1px solid #000; */
+
 }
 
 /*---------------------------------------
@@ -159,7 +159,7 @@ body {
 
 
 .navbar {
-  background: var(--navbar-bg-color);
+  background: #81B1C3;
   z-index: 9;
   transition: all 0.3s;
   padding-top: 15px;
@@ -370,7 +370,7 @@ body {
 }
 
 .custom-form button[type="submit"] {
-  background: #285ff6;
+  background: #009FE3;
   border-radius: 100px;
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
@@ -387,38 +387,12 @@ body {
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
-.footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .social-icon-link {
   font-size: var(--h6-font-size);
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   line-height: 50px;
 }
-
-.copyright-text {
-  font-size: var(--copyright-text-font-size);
-}
-
-.footer__menu {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-menu-item {
-  list-style: none;
-}
-
-.footer-menu-link {
-  font-size: var(--copyright-text-font-size);
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -436,16 +410,18 @@ body {
 
 .social-icon-link {
   background: var(--white-color);
-  border-radius: 100px;
-  font-size: var(--p-font-size);
+  border-radius: 50%;
+  font-size: 30px;
   color: var(--dark-color);
   display: inline-block;
-  vertical-align: top;
   margin: 2px;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   line-height: 30px;
   text-align: center;
+  display: inline-flex;
+  place-content: center;
+  place-items: center;
 }
 
 .social-icon-link:hover {
