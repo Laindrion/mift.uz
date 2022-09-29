@@ -329,6 +329,9 @@ p {
     height: 90vh;
 }
 
+.news__interact {
+    margin-top: 60px;
+}
 
 .news__btn {
     display: inline-block;
@@ -563,7 +566,7 @@ p {
 }
 
 /* STATISTICS OR ABOUT */
-.about {
+.statistic {
     padding-top: 50px;
 }
 
@@ -828,7 +831,6 @@ p {
 .footer__menu-link, .footer__menu-mail {
     display: inline-block;
     padding-left: 25px;
-    padding-bottom: 3px;
     position: relative;
     transition: .5s all;
     margin-bottom: 20px;
