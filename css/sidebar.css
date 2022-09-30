@@ -1,0 +1,140 @@
+.sidebar {
+    padding-top: 164px;
+    width: auto;
+}
+
+.sidebar__menu {
+    max-width: 333px;
+    text-align: left;
+    padding: 40px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.sidebar__menu-title {
+    margin-bottom: 10px;
+}
+
+.sidebar__menu-link {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(21, 19, 19);
+}
+
+.sidebar__menu-active {
+    color: #75D5BA;
+}
+
+/* SIDEBAR SLIDER */
+.sidebar__slider {
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
+
+}
+
+.sidebar__slider-item {
+    max-width: 333px;
+    height: 330px;
+}
+
+.sidebar__slider-img {
+    display: inline-block;
+    max-width: 333px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sidebar__slider .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 164px;
+    top: 350px;
+    width: 10px;
+    height: 10px;
+}
+
+.sidebar__slider .slick-dots .slick-active {
+    opacity: .8;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.sidebar__slider .slick-dots li {
+    margin-left: 10px;
+}
+
+.sidebar__slider .slick-dots li button {
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: transparent;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+}
+
+
+.sidebar__slider-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sidebar__slider-arrow--left,
+.sidebar__slider-arrow--right {
+    cursor: pointer;
+}
+
+.sidebar__slider-arrow--left {
+    margin-right: 40px;
+}
+
+.sidebar__slider-arrow--right {
+    margin-left: 40px;
+}
+
+/* SIDEBAR NEWS */
+.sidebar__news {
+    margin-top: 10px;
+    padding: 20px 30px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.sidebar__news-item {
+    margin-bottom: 30px;
+}
+
+.sidebar__news-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9BD2FF;
+}
+
+.sidebar__news-date {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFBF5F;
+    margin-bottom: 10px;
+}
+
+.sidebar__news-descr {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar__news-img {
+    max-width: 273px;
+    height: 173px;
+}
+
+.sidebar__news-link {
+    display: block;
+    text-align: center;
+    width: auto;
+}

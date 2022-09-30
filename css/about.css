@@ -1,15 +1,50 @@
 body {}
 
-.about__title {
+.global__wrapper {
+    display: grid;
+    grid-template-columns: auto 25%;
+    /* grid-template-columns: auto 300px; */
+    grid-column-gap: 30px;
+}
+
+.about__title .about__title {
     margin: 20px 0;
 }
 
 .about__box {
-    background-color: rgba(248, 247, 242, 0.794);
+    background-color: #F6F6F6;
     border-radius: 10px;
     padding: 30px;
+    max-width: 1150px;
+}
+
+.about__title {
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .about__text--strong {
-    margin-bottom: 50px;
+    line-height: 30px;
+    display: block;
+}
+
+.about__text {
+    display: block;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+
+.about__menu-title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about__menu-list {
+    list-style: square;
+}
+
+.about__menu-item {
+    list-style-type: disc;
+    margin-bottom: 10px;
 }

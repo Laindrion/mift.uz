@@ -54,7 +54,7 @@
     });
   });
 
-  // Header Slider
+  // HEADER SLIDER
   $('.news__box').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -74,13 +74,13 @@
     speed: 300
   })
 
-  // Statistics Counter
+  // STATISTICS COUNTER
   $('.statistic__container-number').counterUp({
     delay: 10,
     time: 2000
   })
 
-  // SLider of Benefit links 
+  // SLIDER OF BENEFIT LINKS
   $('.links__slider-box').slick({
     dots: true,
     infinite: true,
@@ -90,5 +90,13 @@
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+  })
+
+  // SIDEBAR SLIDER
+  $('.sidebar__slider-wrapper').slick({
+    dots: true,
+    fade: true,
+    prevArrow: $('.sidebar__slider-arrow--left'),
+    nextArrow: $('.sidebar__slider-arrow--right'),
   })
 })(window.jQuery);
