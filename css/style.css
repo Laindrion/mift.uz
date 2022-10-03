@@ -27,7 +27,7 @@ h5 {
 }
 
 h2 {
-    color: #50abcb;
+    color: #0093E9;
 }
 
 p {
@@ -89,7 +89,7 @@ p {
     border-radius: 2.5px;
     visibility: hidden;
     opacity: 0;
-    background-color: #446fb9;
+    background-color: #0093E9;
     box-shadow: 9px 12px 16px 17px rgba(34, 60, 80, 0.2);
     transition: visibility 0.1s, opacity 0.5s;
     transition-delay: 250ms;
@@ -152,7 +152,7 @@ p {
 /* SUB MENU */
 .sub-menu {
     position: absolute;
-    background-color: #446fb9;
+    background-color: #0093E9;
     width: 300px;
     top: -30px;
     right: -300px;
@@ -283,7 +283,9 @@ p {
 .news__wrapper {
     height: 90vh;
     max-width: 700px;
-    background-color: #428BA5;
+    background-color: #0093E9;
+    background-image: linear-gradient(257deg, #0093E9 0%, #496cde 100%);
+
     display: flex;
     flex-direction: column;
 }
@@ -513,15 +515,15 @@ p {
 
 @keyframes pen {
     0% {
-        fill: #7c7c7c;
+        fill: #0093E9;
     }
 
     50% {
-        fill: #C7C7C7;
+        fill: #0380c9a7;
     }
 
     100% {
-        fill: #7c7c7c;
+        fill: #0093E9;
     }
 }
 
@@ -540,7 +542,7 @@ p {
 }
 
 .uzb__map svg path:hover {
-    fill: #C7C7C7;
+    fill: #0380c9a7;
     cursor: pointer;
 }
 
@@ -575,6 +577,12 @@ p {
     align-items: center;
 }
 
+.statistics__container-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .statistic__container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -584,8 +592,34 @@ p {
 }
 
 .statistic__icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.statistic__icon-1 {
+    width: 55px;
+    height: 55px;
+}
+
+.statistic__icon-2 {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+}
+
+.statistic__icon-3 {
+    width: 45px;
+    height: 45px;
+}
+
+.statistic__icon-4 {}
+
+.statistic__icon-5 {}
+
+.statistic__icon-6 {
+    width: 60px;
+    height: 60px;
 }
 
 .statistic__container-text {
@@ -594,7 +628,7 @@ p {
     max-width: 390px;
     margin: 0 auto;
     color: #282828;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .statistic__container-number {
@@ -635,7 +669,7 @@ p {
     height: 0;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #0093E9;
     transition: .2s all ease-in-out;
 }
 
@@ -744,9 +778,9 @@ p {
 /* FOOTER */
 .footer {
     margin-top: 50px;
-    background-color: #81B1C3;
+    background-color: #0688d3;
     height: auto;
-    padding: 100px 100px;
+    padding: 50px 100px 100px 100px;
     color: #fff;
     overflow: hidden;
     position: relative;
@@ -780,7 +814,7 @@ p {
 
 .footer__logo {
     display: block;
-    width: 440px;
+    width: 500px;
     padding-bottom: 40px;
 }
 
