@@ -515,22 +515,24 @@ p {
 
 @keyframes pen {
     0% {
-        fill: #0093E9;
-    }
-
-    50% {
         fill: #0380c9a7;
     }
 
+    50% {
+        fill: #7c7c7c;
+    }
+
     100% {
-        fill: #0093E9;
+        fill: #0380c9a7;
     }
 }
 
 .uzb__map-title {
     font-size: 50px;
 }
-
+.uzb__map svg{
+    filter: drop-shadow(6px 9px 8px #000);
+}
 .uzb__map svg path {
     /* fill: #00394f; */
     height: 652px;
@@ -780,7 +782,7 @@ p {
     margin-top: 50px;
     background-color: #0688d3;
     height: auto;
-    padding: 50px 100px 100px 100px;
+    padding: 50px 100px 35px 100px;
     color: #fff;
     overflow: hidden;
     position: relative;
@@ -788,10 +790,9 @@ p {
 
 .footer__container {
     display: flex;
-}
-
-.footer__container {
     margin-top: 90px;
+    margin-bottom: 60px;
+    justify-content: space-between;
 }
 
 .footer::after {
@@ -819,12 +820,20 @@ p {
 }
 
 .footer__box {
-    /* display: flex;
-    flex-wrap: wrap; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
     margin-bottom: 30px;
-    width: 710px;
+    /* width: 710px; */
 }
-
+.footer__box-wrapper{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.footer__box-second{
+    
+}
 .footer__title {
     max-width: 300px;
     position: relative;
@@ -918,6 +927,14 @@ p {
 
 .footer__social .social-links {
     margin-bottom: 20px;
+}
+.social__icon-img{
+    width: 30px;
+    height: 30px;
+}
+.social__icon-img:hover{
+    fill: #fff;
+    stroke: #fff;
 }
 
 .footer__btn {

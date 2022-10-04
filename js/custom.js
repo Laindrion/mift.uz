@@ -1,49 +1,7 @@
 (function ($) {
   "use strict";
-
-  // SCROLL
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry => {
-      console.log(entry)
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show')
-      }
-    }))
-  })
-  const hiddenElements = document.querySelectorAll('.hidden')
-  hiddenElements.forEach((el) => observer.observe(el))
-
-  // NAVBAR
-  $(".navbar-nav .nav-link").click(function () {
-    $(".navbar-collapse").collapse("hide");
-  });
-
-  // CUSTOM LINK
-  $(".custom-link").click(function () {
-    var el = $(this).attr("href");
-    var elWrapped = $(el);
-    var header_height = $(".navbar").height() + 10;
-
-    scrollToDiv(elWrapped, header_height);
-    return false;
-
-    function scrollToDiv(element, navheight) {
-      var offset = element.offset();
-      var offsetTop = offset.top;
-      var totalScroll = offsetTop - navheight;
-
-      $("body,html").animate(
-        {
-          scrollTop: totalScroll,
-        },
-        300
-      );
-    }
-  });
-
-  $(function () { // Dropdown toggle
+  // LANG DROPDOWN TOGGLE BUTTON
+  $(function () {
     $('.lang__toggle').click(function () {
       $(this).next('.menu__lang').slideToggle();
     });
@@ -74,6 +32,26 @@
     speed: 300
   })
 
+  // SCROLL ANIMATION
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show')
+      }
+    }))
+  })
+  const hiddenElements = document.querySelectorAll('.hidden')
+  hiddenElements.forEach((el) => observer.observe(el))
+
+  // NAVBAR
+  $(".navbar-nav .nav-link").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+
   // STATISTICS COUNTER
   $('.statistic__container-number').counterUp({
     delay: 10,
@@ -99,4 +77,12 @@
     prevArrow: $('.sidebar__slider-arrow--left'),
     nextArrow: $('.sidebar__slider-arrow--right'),
   })
+//   .on('changed.owl.carousel', function(event) { 
+//     var current = event.item.index;
+//     var src = $(event.target).find(".owl-item").eq(current).find(".item").data('map');
+//    var mapcurrent =  $('#map-current').val();
+//     $('#'+mapcurrent).css('display','none');
+//     $('#'+src).css('display','block');
+//     var mapcurrent =  $('#map-current').val(src); 
+// });
 })(window.jQuery);
