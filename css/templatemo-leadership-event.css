@@ -151,7 +151,6 @@ body {
 -----------------------------------------*/
 .navbar {
   height: 10vh;
-
 }
 
 /*---------------------------------------
@@ -258,7 +257,7 @@ body {
 
 .pricing-title-wrap,
 .pricing-body {
-  padding: 40px;
+  padding: 40px 25px;
 }
 
 .pricing-body {

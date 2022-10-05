@@ -86,3 +86,16 @@
 //     var mapcurrent =  $('#map-current').val(src); 
 // });
 })(window.jQuery);
+
+let searchBtn = document.querySelector('.header__find');
+let closeBtn = document.querySelector('.header__close');
+let searchBox = document.querySelector('.header__searchbox');
+
+searchBtn.onclick = function (){
+  searchBox.classList.add('active')
+  closeBtn.classList.add('active')
+}
+closeBtn.onclick = function(){
+  searchBox.classList.remove('active')
+  closeBtn.classList.remove('active')
+}
