@@ -1,0 +1,39 @@
+.management__wrapper {
+    float: left;
+}
+.management__title{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+.management__list {
+    background-color: #F1FAFF;
+    padding: 20px 20px;
+    box-shadow: -1px 4px 33px 14px rgba(34, 60, 80, 0.2);
+}
+
+.management__box {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+
+.management__item-1 {
+    display: flex;
+}
+
+.management__name {
+    margin-bottom: 10px;
+}
+
+.management__descr {
+    margin-bottom: 10px;
+}
+
+.management__item-text--wrapper {
+    margin-left: 15px;
+}
+
+.management__contact-link--wrapper {
+    margin-bottom: 5px;
+}

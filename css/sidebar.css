@@ -1,6 +1,15 @@
+.global__wrapper {
+    display: grid;
+    grid-template-columns: auto 25%;
+    /* grid-template-columns: auto 300px; */
+    grid-column-gap: 30px;
+}
+
 .sidebar {
     padding-top: 164px;
     width: auto;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
 }
 
 .sidebar__menu {
@@ -10,27 +19,48 @@
     background-color: #f1faff;
     border-radius: 10px;
     margin-bottom: 30px;
+    box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
 }
 
 .sidebar__menu-title {
     margin-bottom: 10px;
+    color: #161718;
 }
+
+.sidebar__menu-item {}
 
 .sidebar__menu-link {
     display: block;
-    margin-bottom: 10px;
-    color: rgb(21, 19, 19);
+    background:
+        linear-gradient(90deg, #000 50%, #0093E9 0),
+        linear-gradient(-90deg, #000 50%, #0093E9 0),
+        linear-gradient(90deg, #0000 50%, #0093E9 0),
+        linear-gradient(-90deg, #0000 50%, #0093E9 0);
+    background-repeat: no-repeat;
+    background-size: 200% 51%;
+    background-position: top left, bottom right;
+    -webkit-background-clip: text, text, padding-box, padding-box;
+    background-clip: text, text, padding-box, padding-box;
+    transition: 0.5s;
+    padding: 8px 0;
+    width: 101%;
+}
+
+.sidebar__menu-link:hover {
+    color: rgb(255, 255, 255);
+    background-position: top right, bottom left;
+    padding-left: 5px;
 }
 
 .sidebar__menu-active {
-    color: #75D5BA;
+    color: #5459f6;
 }
 
 /* SIDEBAR SLIDER */
 .sidebar__slider {
     padding-bottom: 20px;
     background-color: #f1faff;
-
+    box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
 }
 
 .sidebar__slider-item {
@@ -104,6 +134,7 @@
     padding: 20px 30px;
     background-color: #f1faff;
     border-radius: 10px;
+    box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
 }
 
 .sidebar__news-item {
@@ -114,7 +145,7 @@
 .sidebar__news-title {
     text-align: center;
     margin-bottom: 20px;
-    color: #9BD2FF;
+    color: #161718;
 }
 
 .sidebar__news-date {
@@ -134,7 +165,7 @@
     height: 173px;
 }
 
-.sidebar__news-link--cover{
+.sidebar__news-link--cover {
     width: 110px;
     margin: 0 auto;
 

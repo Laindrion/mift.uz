@@ -1,13 +1,10 @@
 body {}
 
-.global__wrapper {
-    display: grid;
-    grid-template-columns: auto 25%;
-    /* grid-template-columns: auto 300px; */
-    grid-column-gap: 30px;
+.about {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.about__title .about__title {
+.about__title {
     margin: 20px 0;
 }
 
