@@ -16,7 +16,7 @@
     max-width: 333px;
     text-align: left;
     padding: 40px;
-    background-color: #f1faff;
+    background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
@@ -59,7 +59,7 @@
 /* SIDEBAR SLIDER */
 .sidebar__slider {
     padding-bottom: 20px;
-    background-color: #f1faff;
+    background-color: #ffffff;
     box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
 }
 
@@ -132,7 +132,7 @@
 .sidebar__news {
     margin-top: 10px;
     padding: 20px 30px;
-    background-color: #f1faff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
 }

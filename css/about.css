@@ -9,10 +9,11 @@ body {}
 }
 
 .about__box {
-    background-color: #f1faff;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
     max-width: 1150px;
+    box-shadow: -1px 4px 33px 14px rgba(34, 60, 80, 0.2);
 }
 
 .about__title {
