@@ -108,6 +108,7 @@
 
 .sidebar__news-item {
     margin-bottom: 30px;
+    display: block;
 }
 
 .sidebar__news-title {
@@ -133,8 +134,13 @@
     height: 173px;
 }
 
+.sidebar__news-link--cover{
+    width: 110px;
+    margin: 0 auto;
+
+}
+
 .sidebar__news-link {
-    display: block;
     text-align: center;
     width: auto;
 }

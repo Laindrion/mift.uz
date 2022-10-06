@@ -62,7 +62,7 @@
   $('.links__slider-box').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
     arrows: false,

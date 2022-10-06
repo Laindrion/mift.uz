@@ -60,7 +60,10 @@ p {
     box-shadow: 0px 19px 33px -5px rgba(34, 60, 80, 0.2);
 }
 
-.navbar a, .navbar-collapse a, .navbar a:focus, .navbar-collapse a:focus {
+.navbar a,
+.navbar-collapse a,
+.navbar a:focus,
+.navbar-collapse a:focus {
     color: #fff;
     transition: .3s;
 }
@@ -77,7 +80,8 @@ p {
     padding-left: 20px;
 }
 
-.navbar a:hover, .navbar-collapse a:hover {
+.navbar a:hover,
+.navbar-collapse a:hover {
     color: #fff;
     opacity: .7;
 }
@@ -95,6 +99,10 @@ p {
     transition-delay: 250ms;
     text-align: left;
     border-radius: 15px;
+}
+
+.menu__list--moved {
+    /* left: -100px; */
 }
 
 .dropdown:hover .menu__list {
@@ -149,7 +157,7 @@ p {
     transform: rotate(180deg);
 }
 
-/* SUB MENU */
+/* SUB MENU 1*/
 .sub-menu {
     position: absolute;
     background-color: #0093E9;
@@ -183,6 +191,44 @@ p {
     position: absolute;
     right: 10px;
     top: 13px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    transition: .3s all;
+    z-index: 2;
+}
+
+/* SUB MENU 2*/
+.sub-menu-2 {
+    position: absolute;
+    background-color: #0093E9;
+    width: 300px;
+    top: -218px;
+    right: -300px;
+    box-shadow: -10px 9px 14px 10px rgba(34, 60, 80, 0.2);
+    visibility: 0;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.5s;
+    z-index: 11;
+    list-style: disc;
+}
+.sub-menu__link-2 {
+    display: block;
+    padding: 3px 10px;
+}
+
+.dropdown-3:hover .sub-menu-2 {
+    visibility: 1;
+    opacity: 1;
+}
+
+.dropdown-3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 43px;
     width: 8px;
     height: 8px;
     background-color: #fff;
@@ -265,10 +311,8 @@ p {
 }
 
 .header__search-link {
-    display: block;
     width: 22px;
     height: 22px;
-
 }
 
 .header__search-link+.header__search-link {
@@ -281,11 +325,15 @@ p {
 }
 
 .header__close {
-    width: 30px;
-    height: 30px;
     visibility: hidden;
     opacity: 0;
     transition: .5s;
+    margin-bottom: 2px;
+}
+
+.header__close-img {
+    width: 30px;
+    height: 30px;
 }
 
 .header__close.active {
@@ -300,8 +348,8 @@ p {
 .header__searchbox {
     position: absolute;
     display: flex;
-    right: -100%;
-    width: 100%;
+    left: -100%;
+    width: 87%;
     height: 100%;
     align-items: center;
     padding: 0 30px;
@@ -309,12 +357,11 @@ p {
     visibility: hidden;
     opacity: 0;
     transition: .5s all;
-    filter: blur(50px);
 }
 
 .header__searchbox.active {
     transition: .5s all;
-    right: 0;
+    left: 0;
     opacity: 1;
     visibility: visible;
     filter: blur(0px);
@@ -591,6 +638,10 @@ p {
 }
 
 /* UZBEKISTAN MAP OR VENUE*/
+.venue {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .uzb__map {}
 
 #UZB372 {
@@ -637,8 +688,29 @@ p {
 
 .region__container {
     position: relative;
-    right: 0;
+    right: -80px;
     height: 0;
+}
+
+.venue__info-member {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.venue-member-img {
+    width: 60px;
+    height: 60px;
+}
+
+.venue__info-location--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.venue__info-location {
+    padding-left: 10px;
+    letter-spacing: 4px;
 }
 
 .venue-thumb {
@@ -646,6 +718,16 @@ p {
     right: 0;
     top: -6rem;
 }
+
+.venue-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* .venue-location-img {
+    width: 10px;
+    height: 10px;
+} */
 
 .venue-info-body {
     padding-right: 50px;
@@ -911,25 +993,21 @@ p {
 }
 
 .footer__box {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
     margin-bottom: 30px;
-    /* width: 710px; */
 }
 
 .footer__box-wrapper {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
-.footer__box-second {}
+.footer__box-title {
+    margin: 0 auto;
+}
 
 .footer__title {
     max-width: 300px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: rgb(255, 255, 255);
 }
 
@@ -957,13 +1035,14 @@ p {
 }
 
 .footer__menu-title {
-    width: 365px;
+    width: 390px;
     font-size: 27px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
-.footer__menu-link, .footer__menu-mail {
+.footer__menu-link,
+.footer__menu-mail {
     display: inline-block;
     padding-left: 25px;
     position: relative;
@@ -999,7 +1078,8 @@ p {
     height: 20px;
 }
 
-.footer__menu-link::after, .footer__menu-mail::after {
+.footer__menu-link::after,
+.footer__menu-mail::after {
     content: '';
     display: block;
     height: 1px;
@@ -1009,7 +1089,8 @@ p {
     transition: .5s all;
 }
 
-.footer__menu-link:hover:after, .footer__menu-mail:hover:after {
+.footer__menu-link:hover:after,
+.footer__menu-mail:hover:after {
     width: 100%;
 }
 
@@ -1019,6 +1100,36 @@ p {
 
 .footer__social .social-links {
     margin-bottom: 20px;
+}
+
+.social-icon-link {
+    animation: float 3s ease-in-out infinite;
+}
+
+.social__icon-link--instagram {
+    animation-delay: 1s;
+}
+
+.social__icon-link--telegram {
+    animation-delay: 2s;
+}
+
+.social__icon-link--twitter {
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .social__icon-img {

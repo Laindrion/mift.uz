@@ -45,7 +45,8 @@ body {
   font-family: 'Noto Sans Mono', monospace;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
@@ -302,14 +303,16 @@ body {
   overflow: hidden;
 }
 
-.venue-info-title,
+
 .venue-info-body {
   padding: 40px;
 }
 
-.venue-info-title {
+.venue__info-member--wrapper {
   background: var(--navbar-bg-color);
   padding: 20px 40px;
+  display: flex;
+  align-items: center;
 }
 
 .google-map {
