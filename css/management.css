@@ -15,6 +15,7 @@
 }
 
 .management__box {
+    display: block;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 10px 0;
@@ -25,7 +26,10 @@
 .management__item-1 {
     display: flex;
 }
-
+.management__item-img{
+    width: 80px;
+    height: 80px;
+}
 .management__name {
     margin-bottom: 10px;
 }

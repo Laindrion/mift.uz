@@ -12,6 +12,19 @@
     });
   });
 
+  let searchBtn = document.querySelector('.header__find');
+  let closeBtn = document.querySelector('.header__close');
+  let searchBox = document.querySelector('.header__searchbox');
+
+  searchBtn.onclick = function () {
+    searchBox.classList.add('active')
+    closeBtn.classList.add('active')
+  }
+  closeBtn.onclick = function () {
+    searchBox.classList.remove('active')
+    closeBtn.classList.remove('active')
+  }
+
   // HEADER SLIDER
   $('.news__box').slick({
     slidesToShow: 1,
@@ -77,25 +90,26 @@
     prevArrow: $('.sidebar__slider-arrow--left'),
     nextArrow: $('.sidebar__slider-arrow--right'),
   })
-//   .on('changed.owl.carousel', function(event) { 
-//     var current = event.item.index;
-//     var src = $(event.target).find(".owl-item").eq(current).find(".item").data('map');
-//    var mapcurrent =  $('#map-current').val();
-//     $('#'+mapcurrent).css('display','none');
-//     $('#'+src).css('display','block');
-//     var mapcurrent =  $('#map-current').val(src); 
-// });
+  //   .on('changed.owl.carousel', function(event) { 
+  //     var current = event.item.index;
+  //     var src = $(event.target).find(".owl-item").eq(current).find(".item").data('map');
+  //    var mapcurrent =  $('#map-current').val();
+  //     $('#'+mapcurrent).css('display','none');
+  //     $('#'+src).css('display','block');
+  //     var mapcurrent =  $('#map-current').val(src); 
+  // });
 })(window.jQuery);
 
-let searchBtn = document.querySelector('.header__find');
-let closeBtn = document.querySelector('.header__close');
-let searchBox = document.querySelector('.header__searchbox');
-
-searchBtn.onclick = function (){
-  searchBox.classList.add('active')
-  closeBtn.classList.add('active')
-}
-closeBtn.onclick = function(){
-  searchBox.classList.remove('active')
-  closeBtn.classList.remove('active')
-}
+// MANAGEMENT
+$(function () {
+  $('.management__item-1').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});

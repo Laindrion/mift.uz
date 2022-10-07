@@ -654,7 +654,7 @@ p {
 
 @keyframes pen {
     0% {
-        fill: #0380c9a7;
+        fill: #0497eca7;
     }
 
     50% {
@@ -662,7 +662,7 @@ p {
     }
 
     100% {
-        fill: #0380c9a7;
+        fill: #0497eca7;
     }
 }
 
@@ -685,7 +685,7 @@ p {
 }
 
 .uzb__map svg path:hover {
-    fill: #0380c9a7;
+    fill: #0497eca7;
     cursor: pointer;
 }
 
@@ -864,7 +864,6 @@ p {
 
 /* CONTACT */
 .contact {
-    margin-bottom: 50px;
 }
 
 .contact__title {
@@ -876,8 +875,15 @@ p {
 }
 
 /* LINKS */
+.links{
+    padding: 100px 0;
+}
+.links__title{
+    padding-bottom: 50px;
+}
 .links__slider-container {
     z-index: 3;
+    box-shadow: -8px 3px 50px 16px rgba(34, 60, 80, 0.2);
 }
 
 .links__slider-box {
@@ -961,7 +967,6 @@ p {
 
 /* FOOTER */
 .footer {
-    margin-top: 50px;
     background-color: #0688d3;
     height: auto;
     padding: 50px 100px 35px 100px;
