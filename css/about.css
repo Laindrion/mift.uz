@@ -2,6 +2,7 @@ body {}
 
 .about {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
 }
 
 .about__title {

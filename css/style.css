@@ -407,6 +407,7 @@ p {
 }
 
 .news__wrapper {
+    position: relative;
     height: 90vh;
     max-width: 700px;
     background-color: #0093E9;
@@ -527,7 +528,9 @@ p {
 }
 
 .arrows__container {
-    bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 20px 10px 20px 10px;
     background-color: rgba(255, 255, 255, 0.33);
     color: #fff;
@@ -863,8 +866,7 @@ p {
 }
 
 /* CONTACT */
-.contact {
-}
+.contact {}
 
 .contact__title {
     letter-spacing: 5px;
@@ -875,12 +877,14 @@ p {
 }
 
 /* LINKS */
-.links{
+.links {
     padding: 100px 0;
 }
-.links__title{
+
+.links__title {
     padding-bottom: 50px;
 }
+
 .links__slider-container {
     z-index: 3;
     box-shadow: -8px 3px 50px 16px rgba(34, 60, 80, 0.2);
