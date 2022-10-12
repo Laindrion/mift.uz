@@ -41,8 +41,7 @@ html,
 body {
   height: 100vh;
   background-color: #fff;
-  /* font-family: 'Comfortaa', cursive; */
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -163,18 +162,21 @@ body {
 
 
 .navbar {
-  background-color: #0093E9;
+  background-color: #ffffff;
   z-index: 9;
   transition: all 0.3s;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-nav .nav-link {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.navbar ul{
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*---------------------------------------
