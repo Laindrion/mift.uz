@@ -35,6 +35,7 @@
     speed: 300,
     autoplay: true,
     autoplaySpeed: 5000,
+    fade: true
   }).slickAnimation();
   $('.news__img-box').slick({
     slidesToShow: 1,
