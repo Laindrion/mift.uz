@@ -96,23 +96,27 @@ p {
     position: relative;
     left: 160px;
 }
-.nav-item-margin{
-}
-.menu__list-title{
-
-}
-.menu__list {
+.menu__list{
     display: flex;
     position: absolute;
     left: 0;
-    top: -1000px;
     top: calc(100%);
-    visibility: visible;
+    visibility: hidden;
+    opacity: 0;
     width: 100%;
-    opacity: 1;
     background-color: #fff;
-    transition: visibility 0.1s, opacity 0.5s, transform 1s;
-    transform: translateY(-200%);
+    transition: height .5s, visibility .1s, opacity .1s;
+    height: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.menu__list::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
 }
 .menu__list-title{
     width: 33.3%;
@@ -128,62 +132,62 @@ p {
     background-repeat: no-repeat;
     box-shadow: -33px 0px 50px -1px rgba(34, 60, 80, 0.09) inset;
 }
-.menu__list--moved {
-    /* left: -100px; */
-}
 
-.dropdown:hover .menu__list {
+.dropdown:hover > .menu__list {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    height: 80vh;
+    transition: height .5s, visibility .3s, opacity .3s;
 }
 
+.menu__list-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
 .menu__list-item {
-    display: block;
-    padding-left: 10px;
+    opacity: 0;
 }
-
-.menu__list-item:nth-last-child(1) {
-    padding-bottom: 10px;
-}
-
-.menu__list-item:nth-child(1) {
-    padding-top: 10px;
-}
-
 .menu__list-link {
-    display: block;
-    padding: 5px 10px 5px 5px;
-    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 320px;
+    text-align: left;
+    font-size: 18px;
     color: rgb(0, 0, 0);
-    /* transition: .5s all; */
-}
-
-.menu__list-link:hover {
-    /* background-color: #4461db; */
-    padding-left: 10px;
-    border-left: 1px solid #fff;
-    transition: .5s all;
-    color: rgb(0, 38, 108);
-
-}
-
-.dropdown::after {
-    content: '';
-    display: block;
+    height: 60px;
+    text-align: left;
+    border: 1px solid #ebedf2;
     position: relative;
-    left: -10px;
-    top: -34px;
-    width: 10px;
+    /* transition-delay: 250ms; */
+    transition: 1s;
+}
+.dropdown:hover .menu__list-item{
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 250ms;
+}
+.menu__list-link::before{
+    content: '';
+    position: absolute;
+    display: block;
     height: 10px;
-    background-color: #fff;
-    clip-path: polygon(50% 100%, 0 50%, 100% 50%);
-    transition: .3s all;
+    width: 10px;
+    clip-path: polygon(0 0, 36% 55%, 0 100%, 100% 55%);
+    background-color: #A3A6A9;
+    right: 10px;
+}
+.menu__list-link:hover:before{
+    background-color: #000;
+}
+.menu__list-link:hover {
+    color: rgb(0, 38, 108);
+    border: 1px solid #000;
 }
 
-.dropdown:hover:after {
-    transform: rotate(180deg);
-}
 
 /* SUB MENU 1*/
 .sub-menu {
@@ -193,13 +197,12 @@ p {
     top: -30px;
     right: -300px;
     box-shadow: -10px 9px 14px 10px rgba(34, 60, 80, 0.2);
-    visibility: 0;
+    visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s, opacity 0.5s;
 }
 
 .dropdown-2 {
-    display: flex;
     position: relative;
 }
 
@@ -209,7 +212,7 @@ p {
 }
 
 .dropdown-2:hover .sub-menu {
-    visibility: 1;
+    visibility: visible;
     opacity: 1;
 }
 
@@ -235,10 +238,10 @@ p {
     top: -218px;
     right: -300px;
     box-shadow: -10px 9px 14px 10px rgba(34, 60, 80, 0.2);
-    visibility: 0;
+    visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s, opacity 0.5s;
-    z-index: 11;
+    /* z-index: 11; */
     list-style: disc;
 }
 
@@ -248,7 +251,7 @@ p {
 }
 
 .dropdown-3:hover .sub-menu-2 {
-    visibility: 1;
+    visibility: visible;
     opacity: 1;
 }
 
@@ -446,6 +449,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    place-content: center;
+
 }
 
 .news__box {
@@ -469,8 +474,8 @@ p {
     color: #fff;
     font-size: 35px;
     font-weight: 800;
-    /* max-width: 670px; */
-    margin-right: 75px;
+    max-width: 670px;
+    text-transform: capitalize;
     letter-spacing: 6px;
     line-height: 60px;
     height: 400px;
@@ -508,7 +513,6 @@ p {
     place-content: center;
     place-items: center;
     text-align: center;
-    margin-bottom: 10px;
     padding: 0 47px;
     background-color: #052E59;
     border: 1px solid #fff;
@@ -518,7 +522,8 @@ p {
     font-size: 24px;
     position: relative;
     letter-spacing: 2px;
-    margin-left: 30%;
+    /* margin-bottom: 10px;
+    margin-left: 30%; */
 }
 
 .news__btn::after {
