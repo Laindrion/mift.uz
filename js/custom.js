@@ -1,5 +1,12 @@
 (function ($) {
   "use strict";
+  // The function of menu
+  $('.sub-menu__link').hover(
+    function () {
+      $('.menu__list-link--hover').last().toggleClass('menu__list-link--active');
+    }
+  );
+
   // LANG DROPDOWN TOGGLE BUTTON
   $(function () {
     $('.lang__toggle').click(function () {
