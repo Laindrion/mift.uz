@@ -8,15 +8,14 @@
   );
 
   // LANG DROPDOWN TOGGLE BUTTON
-  $(function () {
-    $('.lang__toggle').click(function () {
-      $(this).next('.menu__lang').slideToggle();
-    });
 
-    $(document).click(function (e) {
-      var target = e.target;
-      if (!$(target).is('.lang__toggle') && !$(target).parents().is('.lang__toggle')) { $('.menu__lang').slideUp(); }
-    });
+  $('.lang__toggle').click(function () {
+    $(this).next('.menu__lang').slideToggle();
+  });
+
+  $(document).click(function (e) {
+    var target = e.target;
+    if (!$(target).is('.lang__toggle') && !$(target).parents().is('.lang__toggle')) { $('.menu__lang').slideUp(); }
   });
 
   let searchBtn = document.querySelector('.header__find');
