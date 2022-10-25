@@ -655,10 +655,11 @@ p {
 
 /* PRICING OR INTERACTIVE */
 .pricing {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/interactive-bg-3.jpg');
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
+    box-shadow: 0px 13px 18px -8px rgba(34, 60, 80, 0.2) inset;
 }
 
 .pricing .row {
@@ -843,10 +844,11 @@ p {
 
 /* STATISTICS OR ABOUT */
 .statistic {
-    background-image: url('../images/bg-3.jpg');
+    background-image: url('../images/statistics-bg-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
+    box-shadow: 0px 13px 37px -8px rgba(34, 60, 80, 0.2) inset;
 }
 
 .statistics__container {
@@ -961,7 +963,7 @@ p {
 
 /* CONTACT */
 .contact {
-    background-image: url('../images/bg-2.jpg');
+    background-image: url('../images/contact-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
