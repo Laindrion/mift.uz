@@ -8,7 +8,6 @@
   );
 
   // LANG DROPDOWN TOGGLE BUTTON
-
   $('.lang__toggle').click(function () {
     $(this).next('.menu__lang').slideToggle();
   });
@@ -18,6 +17,7 @@
     if (!$(target).is('.lang__toggle') && !$(target).parents().is('.lang__toggle')) { $('.menu__lang').slideUp(); }
   });
 
+  // SEARCH BUTTON
   let searchBtn = document.querySelector('.header__find');
   let closeBtn = document.querySelector('.header__close');
   let searchBox = document.querySelector('.header__searchbox');
