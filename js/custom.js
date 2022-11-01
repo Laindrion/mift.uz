@@ -6,6 +6,11 @@
       $('.menu__list-link--hover').last().toggleClass('menu__list-link--active');
     }
   );
+  $('.dropdown').hover(
+    function () {
+      $('.header__banner').last().toggleClass('header__banner-disabled');
+    }
+  );
 
   // LANG DROPDOWN TOGGLE BUTTON
   $('.lang__toggle').click(function () {

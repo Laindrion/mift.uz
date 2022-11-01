@@ -162,12 +162,6 @@ body {
 -----------------------------------------*/
 
 
-.navbar {
-  background-color: #fff;
-  z-index: 9;
-  transition: all 0.3s;
-  font-family: 'Open Sans', sans-serif;
-}
 
 .navbar-nav .nav-link {
   padding: 35px 0;
@@ -270,13 +264,6 @@ body {
 /*---------------------------------------
   CONTACT              
 -----------------------------------------*/
-.contact {
-  background-image: url('../images/contact-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* background: #F8F8F8; */
-}
 
 .contact-form {
   position: relative;

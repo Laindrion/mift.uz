@@ -35,6 +35,124 @@ p {
     margin: 0;
 }
 
+/* NAVBAR TOP */
+.navbar-top {
+    background-color: rgb(151, 155, 174);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* HEADER SEARCH */
+.header__search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 0;
+    z-index: 10;
+    top: -3px;
+}
+
+.header__search-link {
+    width: 22px;
+    height: 22px;
+}
+
+.header__search-link+.header__search-link {
+    margin-left: 15px;
+}
+
+.header__search-img {
+    width: 22px;
+    height: 22px;
+}
+
+.header__close {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    margin-bottom: 2px;
+}
+
+.header__close-img {
+    width: 30px;
+    height: 30px;
+}
+
+.header__close.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header__find {
+    margin-right: 50px;
+}
+
+.header__searchbox {
+    position: absolute;
+    display: flex;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #049ef7;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.header__searchbox.active {
+    transition: .5s all;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0px);
+}
+
+.header__input {
+    width: 88%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #049ef7;
+    color: rgb(0, 0, 0);
+}
+
+.header__input::placeholder {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.menu__top-list {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__top-social {
+    border-left: 1px solid #000;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.menu__top-link {
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu__list-img {
+    max-width: 26px;
+    max-height: 26px;
+    width: auto;
+    height: auto;
+}
+
+/* NAVBAR BOTTOM */
 /* Logo */
 .logo__wrapper {
     max-width: 400px;
@@ -45,7 +163,11 @@ p {
 
 .logo {
     display: block;
+    max-width: 400px;
     width: 100%;
+    height: 70px;
+    position: absolute;
+    /* top: 20px; */
 }
 
 /* MENU */
@@ -58,6 +180,34 @@ p {
 
 .navbar {
     box-shadow: 0px 19px 33px -5px rgba(34, 60, 80, 0.2);
+    padding-top: 35px;
+}
+
+.header__banner {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    padding-top: 3px;
+    background-image: url('../images/header__square1.jpg');
+    background-position: top left;
+    width: 100%;
+}
+
+.header__banner-disabled {
+    background: none;
+    padding: 0;
+
+}
+
+.navbar {
+    background-color: #fff;
+    z-index: 9;
+    transition: all 0.3s;
+    font-family: 'Open Sans', sans-serif;
+    /* position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0; */
 }
 
 .navbar a,
@@ -66,10 +216,6 @@ p {
 .navbar-collapse a:focus {
     color: rgb(0, 0, 0);
     transition: .3s;
-}
-
-.navbar-collapse {
-    padding-right: 200px;
 }
 
 .navbar .nav-item:nth-child(1) {
@@ -96,9 +242,9 @@ p {
 }
 
 .nav-item-cover {
-    display: flex;
     position: relative;
-    left: 160px;
+    left: -200px;
+    display: flex;
 }
 
 .menu__list {
@@ -352,89 +498,6 @@ p {
     text-align: center;
 }
 
-/* HEADER SEARCH */
-.header__search-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: -2px;
-    left: 60px;
-    z-index: 10;
-}
-
-.header__search-link {
-    width: 22px;
-    height: 22px;
-}
-
-.header__search-link+.header__search-link {
-    margin-left: 15px;
-}
-
-.header__search-img {
-    width: 22px;
-    height: 22px;
-}
-
-.header__close {
-    visibility: hidden;
-    opacity: 0;
-    transition: .5s;
-    margin-bottom: 2px;
-}
-
-.header__close-img {
-    width: 30px;
-    height: 30px;
-}
-
-.header__close.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.header__find {
-    margin-right: 50px;
-}
-
-.header__searchbox {
-    position: absolute;
-    display: flex;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    padding: 0 30px;
-    background-color: #049ef7;
-    visibility: hidden;
-    opacity: 0;
-    transition: .5s all;
-}
-
-.header__searchbox.active {
-    transition: .5s all;
-    left: 0;
-    opacity: 1;
-    visibility: visible;
-    filter: blur(0px);
-}
-
-.header__input {
-    width: 88%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    background-color: #049ef7;
-    color: rgb(0, 0, 0);
-}
-
-.header__input::placeholder {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
 /* HIDDEN AND SHOW */
 .hidden {
     opacity: 0;
@@ -674,8 +737,9 @@ p {
 .pricing {
     background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat;
-    box-shadow: 0px 13px 18px -8px rgba(34, 60, 80, 0.2) inset;
     padding-top: 300px;
+    z-index: 1;
+    box-shadow: 0px 18px 19px 0px rgba(34, 60, 80, 0.23);
 }
 
 .pricing {
@@ -783,6 +847,7 @@ p {
     background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat;
     position: relative;
+    box-shadow: 0px 18px 19px 0px rgba(34, 60, 80, 0.23);
     z-index: 1;
 }
 
@@ -908,6 +973,9 @@ p {
     background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat;
     padding-top: 50px;
+    position: relative;
+    box-shadow: 0px 18px 19px 0px rgba(34, 60, 80, 0.23);
+    z-index: 1;
 }
 
 .statistic__title {
@@ -1043,26 +1111,11 @@ p {
 
 /* CONTACT */
 .contact {
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../images/bg_releases.jpg');
+    background-repeat: repeat;
     position: relative;
     z-index: 1;
-    box-shadow: 0px 13px 37px -8px rgba(34, 60, 80, 0.2) inset;
-
-}
-
-.contact::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .1;
-    z-index: -1;
+    box-shadow: 0px 18px 19px 0px rgba(34, 60, 80, 0.23);
 }
 
 .contact__title {
