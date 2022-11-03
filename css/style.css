@@ -309,6 +309,7 @@ p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: -26px 21px 23px -13px rgba(34, 60, 80, 0.2) inset;
 }
 
 .dropdown:hover .menu__list-title {
@@ -1185,7 +1186,7 @@ section {
     opacity: .5;
 }
 
-.links__slider-box .slick-active ~ .links__slider-item::after {
+.links__slider-box .slick-active~.links__slider-item::after {
     opacity: 0;
 }
 
