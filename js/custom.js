@@ -85,16 +85,13 @@
 
   // SLIDER OF BENEFIT LINKS
   $('.links__slider-box').slick({
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: '60px'
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    arrows: true,
+    prevArrow: $('.links__arrow-left'),
+    nextArrow: $('.links__arrow-right'),
   })
 
   // SIDEBAR SLIDER

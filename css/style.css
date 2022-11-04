@@ -1139,9 +1139,6 @@ section {
 
 /* LINKS */
 .links {
-    /* background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; */
     font-family: 'Libertinus Serif Display';
     background-color: rgb(250, 252, 255);
     padding: 100px 0;
@@ -1149,109 +1146,70 @@ section {
 }
 
 .links__title {
-    padding-bottom: 50px;
+    max-width: 416px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
-.links__slider-container {
-    z-index: 3;
-    /* box-shadow: -8px 3px 50px 16px rgba(34, 60, 80, 0.2); */
+.links__slider-inner {
+    /* max-width: 1800px;
+    margin: 0 auto; */
 }
 
 .links__slider-box {
-    z-index: 1;
-    width: 100%;
+    display: flex;
 }
 
-.links__slider-item {
-    display: block;
-    /* max-width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 20px 0px rgb(110 110 110 / 20%); */
+.links__slider-img--cover {
+    max-width: 300px;
+    height: 100px;
     text-align: center;
-    height: 250px;
-    /* padding: 0 15px;
-    margin-right: 10px; */
-    position: relative;
-}
-
-.links__slider-item::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    top: 0;
-    left: 0;
-    opacity: .5;
-}
-
-.links__slider-box .slick-active~.links__slider-item::after {
-    opacity: 0;
-}
-
-.links__slider-img--container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     padding-top: 15px;
-    width: 215px;
 }
 
 .links__slider-img {
-    margin: 0 auto;
     width: auto;
     height: 50px;
 }
 
+.links__slider-item {
+    display: block;
+    text-align: center;
+}
+
+.item {
+    padding: 0 50px;
+    border-right: 1px solid rgba(98, 106, 107, 0.287);
+}
+
 .links__slider-text {
     display: block;
-    max-width: 215px;
-    height: 130px;
-    padding-top: 10px;
+    height: 150px;
+    max-width: 250px;
+    margin: 0 auto;
 }
 
 .links__slider-link {
-    margin-top: 30px;
-    font-size: 16px;
+    display: block;
+    font-size: 18px;
+    height: 40px;
     letter-spacing: 1px;
 }
-
-.links__slider-box .slick-dots {
-    position: absolute;
+.links__arrows-cover{
     display: flex;
-    right: 0;
-    top: -4rem;
+    justify-content: center;
+    margin-top: 50px;
+}
+.links__arrow-left {
+    cursor: pointer;
+    margin-right: 30px;
 }
 
-.links__slider-box .slick-dots li button {
-    position: relative;
-    display: block;
-    line-height: 0;
-    color: transparent;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    border-radius: 50%;
-    font-size: 0;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-}
-
-.links__slider-box .slick-dots .slick-active {
-    opacity: .6;
-}
-
-.links__slider-box .slick-dots li button::before {
-    font-family: 'slick';
-    font-size: 25px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-    color: #0dcaf0;
+.links__arrow-right {
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -1494,4 +1452,60 @@ section {
 
 .copyright-text-wrap p {
     color: #fff;
+}
+
+
+.page__header {
+    height: 250px;
+    background-image: url('../images/bg-news-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-family: 'Libertinus Serif Display';
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.page__header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: -1;
+}
+
+
+/* TO OTHER PAGES */
+.menu__title {
+    color: #fff;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.menu__title::after {}
+
+.page__title {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    z-index: 2;
+    font-size: 60px;
 }
