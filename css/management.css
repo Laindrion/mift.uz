@@ -1,33 +1,16 @@
-.management__wrapper {
-    float: left;
-    margin-bottom: 50px;
-}
-
-.management__title {
-    margin-top: 50px;
-    margin-bottom: 45px;
-}
-
-.management__list {
-    /* background-color: #F1FAFF; */
-    padding: 20px 20px;
-    border-radius: 10px;
-}
-
-.management__box {
+.management__item-1 {
+    border: 1px solid red;
     display: flex;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px 10px;
-    margin-bottom: 30px;
-    transition: .5s all;
+    position: relative;
 }
 
-.management__box:hover {
-    box-shadow: 0px 0px 44px 3px rgba(34, 60, 80, 0.2);
+.management__links {
+    position: absolute;
+    bottom: 400px;
+    left: 100px;
 }
+
+.management__contact-link {}
 
 /* MANAGEMENT INNER */
 .management__item-2 {
@@ -100,10 +83,6 @@
     margin-bottom: 2px;
 }
 
-.management__contact-icon path {
-    fill: #000;
-}
-
 .management__contact-icon.phone {
     width: 22px;
     height: 22px;
@@ -149,7 +128,7 @@
 .modal-dismiss {
     position: absolute;
     top: -10px;
-    right: -10px;
+    right: -5px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     width: 40px;

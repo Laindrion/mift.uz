@@ -93,31 +93,13 @@
     prevArrow: $('.links__arrow-left'),
     nextArrow: $('.links__arrow-right'),
   })
-
-  // SIDEBAR SLIDER
-  $('.sidebar__slider-wrapper').slick({
-    dots: true,
-    fade: true,
-    prevArrow: $('.sidebar__slider-arrow--left'),
-    nextArrow: $('.sidebar__slider-arrow--right'),
-  })
-  //   .on('changed.owl.carousel', function(event) { 
-  //     var current = event.item.index;
-  //     var src = $(event.target).find(".owl-item").eq(current).find(".item").data('map');
-  //    var mapcurrent =  $('#map-current').val();
-  //     $('#'+mapcurrent).css('display','none');
-  //     $('#'+src).css('display','block');
-  //     var mapcurrent =  $('#map-current').val(src); 
-  // });
 })(window.jQuery);
 
 // MANAGEMENT
 $(function () {
   $('.management__item-1').magnificPopup({
-    type: 'inline',
-    // preloader: false,
-    focus: '#username',
-    modal: true
+    closeOnBgClick: true,
+    fixedBgPos: false
   });
   $(document).on('click', '.modal-dismiss', function (e) {
     e.preventDefault();
