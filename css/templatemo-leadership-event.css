@@ -16,7 +16,7 @@ https://templatemo.com/tm-575-leadership-event
   --secondary-color: #CAEBF2;
   --section-bg-color: #f0f8ff;
   --dark-color: #000000;
-  --navbar-bg-color: #02579A;
+  --navbar-bg-color: #005a9e;
   --p-color: #717275;
   --highlight-icon-color: #ff0100;
 
@@ -312,7 +312,7 @@ body {
 }
 
 .custom-form button[type="submit"] {
-  background: #009FE3;
+  background: #005a9e;
   border-radius: 100px;
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
