@@ -107,7 +107,7 @@ p {
     height: 100%;
     align-items: center;
     padding: 0 30px;
-    background-color: rgb(37, 44, 106);
+    background-color: rgb(39, 47, 118);
     visibility: hidden;
     opacity: 0;
     transition: .5s all ease-in-out;
@@ -132,7 +132,7 @@ p {
     border: none;
     outline: none;
     font-size: 20px;
-    background-color: rgb(37, 44, 106);
+    background-color: rgb(39, 47, 118);
     color: #fff;
     font-family: 'Libertinus Serif Display';
 }
@@ -712,6 +712,11 @@ p {
     font-size: 18px;
     line-height: 1.2222222222;
     padding: 0;
+    letter-spacing: 0.5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .recent__text:hover {
