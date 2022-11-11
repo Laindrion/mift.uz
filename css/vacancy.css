@@ -1,0 +1,12 @@
+.vacancy__btn-active, .vacancy__btn:hover {
+    background-color: #ccc;
+}
+
+.vacancy__inner-box {
+    padding: 0 18px;
+    background-color: white;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: .4s all;
+}
