@@ -1,12 +1,41 @@
-.vacancy__btn-active, .vacancy__btn:hover {
+.regions__select {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.vacancy__wrapper{
+    padding-bottom: 30px;
+}
+.vacancy__btn {
+    border: 1px solid #B8B1B3;
+    border-radius: 5px;
+    background: transparent;
+    text-align: left;
+    width: 994px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.vacancy__btn-active {
     background-color: #ccc;
 }
 
 .vacancy__inner-box {
     padding: 0 18px;
     background-color: white;
-    /* display: none; */
     max-height: 0;
     overflow: hidden;
     transition: .4s all;
+    width: 994px;
+}
+
+.vacancy__title {
+    max-width: 940px;
+    display: block;
+    font-size: 16px;
+}
+
+.vacancy__text {
+    color: #B8B1B3;
+    font-size: 13px;
 }

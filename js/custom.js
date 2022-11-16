@@ -90,6 +90,7 @@
     slidesToShow: 5,
     slidesToScroll: 3,
     arrows: true,
+    autoplay: true,
     prevArrow: $('.links__arrow-left'),
     nextArrow: $('.links__arrow-right'),
   })
