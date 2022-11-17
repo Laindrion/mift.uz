@@ -27,7 +27,7 @@ h5 {
 }
 
 h2 {
-    color: #0093E9;
+    color: #29658B;
 }
 
 p {
@@ -799,7 +799,7 @@ section {
     display: block;
     width: 200px;
     height: 2px;
-    background-color: #0093E9;
+    background-color: #05214E;
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
@@ -856,7 +856,7 @@ section {
 }
 
 .btn__interactive {
-    background-color: #005a9e;
+    background-color: #05214E;
     padding: 10px 20px;
     border-radius: 40px;
     color: #fff;
@@ -1021,7 +1021,7 @@ section {
     display: block;
     width: 200px;
     height: 2px;
-    background-color: rgb(34, 76, 191);
+    background-color: #05214E;
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
