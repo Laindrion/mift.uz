@@ -134,13 +134,14 @@ p {
     font-size: 20px;
     background-color: rgb(39, 47, 118);
     color: #fff;
-    font-family: 'Libertinus Serif Display';
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .header__input::placeholder {
     color: #fff;
-    letter-spacing: 5px;
-    font-family: 'Libertinus Serif Display';
+    letter-spacing: 3px;
+    font-size: 16px;
 }
 
 .menu__top-list {
@@ -1507,4 +1508,40 @@ section {
     letter-spacing: 2px;
     z-index: 2;
     font-size: 60px;
+}
+
+/* MAGNIFIC POPUP STYLES */
+.mfp-zoom-in {
+    /* start state */
+    /* animate in */
+    /* animate out */
+}
+
+.mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
 }

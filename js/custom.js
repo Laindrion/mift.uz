@@ -100,7 +100,13 @@
 $(function () {
   $('.management__item-1').magnificPopup({
     closeOnBgClick: true,
-    fixedBgPos: false
+    fixedBgPos: false,
+    // delegate: 'a',
+    callbacks: {
+      beforeOpen: function () {
+        this.st.mainClass = this.st.el.attr('data-effect');
+      }
+    },
   });
   $(document).on('click', '.modal-dismiss', function (e) {
     e.preventDefault();
@@ -110,12 +116,12 @@ $(function () {
 
 // Vacancy
 
-var acc = document.getElementsByClassName("vacancy__btn");
-var i;
-
+let acc = document.getElementsByClassName("vacancy__btn");
+let i;
+let plusBtn = document.getElementsByClassName("plus-btn");
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+    this.classList.toggle("vacancy__btn-active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -123,4 +129,11 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+}
+
+acc.onclick = function () {
+  plusBtn.classList.add("plus-btn-close");
+}
+acc.onclick = function () {
+  plusBtn.classList.remove("plus-btn-close");
 }
