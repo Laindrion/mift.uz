@@ -18,6 +18,11 @@
     margin-left: 15px;
 }
 
+.vacancy__select-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .regions__select {
     padding: 10px;
     margin-right: 10px;
@@ -53,6 +58,7 @@
     transition: .5s;
     background-color: #97a1b30d;
 }
+
 .vacancy__inner-box {
     padding: 0 18px;
     margin-bottom: 10px;
@@ -85,12 +91,25 @@
 }
 
 .vacancy__inner-btn {
-    display: block;
+    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 10px 5px;
+    background: rgb(152, 222, 255);
+    color: #fff;
+    border-radius: 6px;
+    transition: .5s;
 }
 
-table, th, td {
+.vacancy__inner-btn:hover {
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    background: rgb(135, 167, 255);
+}
+
+table,
+th,
+td {
     border: 1px solid #0207175f;
 }
 
