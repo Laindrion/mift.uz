@@ -49,14 +49,33 @@
     transition: .5s;
 }
 
+.vacancy__btn:after {
+    content: '+';
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    color: #777;
+}
+
 .vacancy__btn:hover {
     background-color: #97a1b30d;
     transition: .5s;
 }
 
 .vacancy__btn-active {
-    transition: .5s;
     background-color: #97a1b30d;
+}
+
+.vacancy__btn-active::after {
+    content: '-';
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
 }
 
 .vacancy__inner-box {
@@ -95,7 +114,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 5px;
-    background: rgb(152, 222, 255);
+    background: #264687;
+    /* #4681f4 */
     color: #fff;
     border-radius: 6px;
     transition: .5s;
@@ -104,7 +124,7 @@
 .vacancy__inner-btn:hover {
     transition: .5s;
     color: rgb(255, 255, 255);
-    background: rgb(135, 167, 255);
+    background: #2e55a2;
 }
 
 table,
@@ -133,38 +153,4 @@ td {
 
 .vacancy__table-text:first-child {
     padding-top: 10px;
-}
-
-.plus-btn {
-    position: absolute;
-    width: 20px;
-    height: 30px;
-    right: 30px;
-    top: 50%;
-}
-
-.plus-btn-close {
-    position: absolute;
-    width: 20px;
-    height: 30px;
-    right: 30px;
-    top: 40%;
-    transform: rotate(45deg);
-}
-
-.plus-item1 {
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background: #000;
-    left: -1px;
-}
-
-.plus-item2 {
-    position: absolute;
-    height: 25px;
-    width: 2px;
-    top: -38%;
-    left: 50%;
-    background: #000;
 }

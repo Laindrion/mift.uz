@@ -118,7 +118,6 @@ $(function () {
 
 let acc = document.getElementsByClassName("vacancy__btn");
 let i;
-let plusBtn = document.getElementsByClassName("plus-btn");
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("vacancy__btn-active");
@@ -129,11 +128,4 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}
-
-acc.onclick = function () {
-  plusBtn.classList.add("plus-btn-close");
-}
-acc.onclick = function () {
-  plusBtn.classList.remove("plus-btn-close");
 }

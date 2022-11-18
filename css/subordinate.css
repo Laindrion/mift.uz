@@ -1,0 +1,14 @@
+.subordinate__wrapper{
+}
+.subordinate__title{
+    padding-top: 20px;
+}
+.subordinate__box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 60px;
+}
+.subordinate__item{
+    max-width: 400px;
+    text-align: center;
+}
