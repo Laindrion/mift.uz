@@ -64,7 +64,7 @@
     transition: .5s;
 }
 
-.vacancy__btn-active {
+.accardion__active {
     background-color: #97a1b30d;
 }
 
@@ -113,7 +113,7 @@
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px 5px;
+    padding: 10px;
     background: #264687;
     /* #4681f4 */
     color: #fff;

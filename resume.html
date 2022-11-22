@@ -34,15 +34,11 @@
 
     <link rel="stylesheet" href="css/fonts.css">
 
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link rel="stylesheet" href="css/resume.css">
+
     <link rel="stylesheet" href="css/style.css">
-
-    <!--
-
-TemplateMo 575 Leadership Event
-
-https://templatemo.com/tm-575-leadership-event
-
--->
 </head>
 
 <body>
@@ -381,17 +377,180 @@ https://templatemo.com/tm-575-leadership-event
 
     <main>
         <section class="resume">
-            <div class="global__wrapper">
-
-            </div> 
+            <div class="page__header">
+                <h6 class="menu__title">
+                    Министерство
+                </h6>
+                <h3 class="page__title">Работа в министерстве</h3>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="resume__wrapper">
-                        <form class="resume__form" action="">
-                            <input class="resume__form" type="text" name="" id="">
-                            <input class="resume__form" type="text" name="" id="">
-                            <input class="resume__form" type="text" name="" id="">
-                        </form>
+                    <div class="global__wrapper">
+
+
+                        <div class="resume__wrapper">
+                            <form class="resume__form" action="">
+                                <div>
+                                    <label for="vacancy">Прием заявок на должность *</label>
+                                    <input class="resume__form-vacancy" type="text" name="" id="vacancy">
+                                </div>
+                                <div>
+                                    <label for="full-name">ФИО *</label>
+                                    <input class="resume__form-name" type="text" name="" id="full-name">
+                                </div>
+                                <div class="resume__form-wrapper">
+                                    <label for="date-of-birth">Дата рождения *
+                                        <input class="resume__form" type="text" name="" id="date-of-birth">
+                                    </label>
+
+
+                                    <label for="nationality">Национальность *
+                                        <input class="resume__form" type="text" name="" id="nationality">
+                                    </label>
+
+
+                                    <label for="family-status">Семейное положение *
+                                        <input class="resume__form" type="text" name="" id="family-status">
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <label>Место жительства *</label>
+                                    <select class="regions__select" id="regions" name="region-list" form="carform">
+                                        <option value="1">Регион</option>
+                                        <option value="2">Ташкент</option>
+                                        <option value="3">Ташкентская Область</option>
+                                        <option value="4">Джизакская Область</option>
+                                        <option value="5">Самаркандская Область</option>
+                                        <option value="6">Хорезмская Область</option>
+                                        <option value="7">Сурхандарьинская Область</option>
+                                        <option value="8">Сырдарьинская Область</option>
+                                        <option value="9">Наманганская Область</option>
+                                        <option value="10">Навоийская Область</option>
+                                        <option value="11">Кашкадарьинская Область</option>
+                                        <option value="12">Андижанская Область</option>
+                                        <option value="13">Бухарская Область</option>
+                                        <option value="14">Центральный Область</option>
+                                        <option value="15">Республика Каракалпакистан</option>
+                                        <option value="16">Ферганская Область</option>
+                                    </select>
+                                    <input class="resume__form" type="text" name="" id="region">
+                                    <input class="resume__form" type="text" name="" id="address">
+                                </div>
+                                <div class="resume__form-wrapper">
+                                    <label for="phone__number">Телефон *</label>
+                                    <input class="resume__form" type="text" name="" id="phone__number">
+
+                                    <label for="email">Эл.почта *</label>
+                                    <input class="resume__form" type="text" name="" id="email">
+
+                                    <label for="TIN">ИНН *</label>
+                                    <input class="resume__form" type="text" name="" id="TIN">
+                                </div>
+
+                                <div>
+                                    <label for="education">Образование *</label>
+                                    <input class="resume__form" type="text" name="" id="education">
+
+                                    <label for="specialization">Специальность *</label>
+                                    <input class="resume__form" type="text" name="" id="specialization">
+                                </div>
+
+                                <div>
+                                    <label>Какой ВУЗ окончили *</label>
+                                    <input class="resume__form" type="text" name="" id="specialization">
+                                    <input class="resume__form" type="text" name="" id="name-of-uni">
+                                </div>
+
+                                <div>
+                                    <label>Мотивация для трудоустройства</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                                    <label>Дополнительные данные</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+
+                                <div>
+                                    <button class="resume__download">
+                                        Скачать резюме
+                                    </button>
+                                    <button class="resume__upload">
+                                        Загрузить файл
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <input class="resume__captcha" type="text">
+                                    <div>
+                                        <img src="" alt="">
+                                        <a class="resume__refresh" href="##"></a>
+                                    </div>
+                                </div>
+
+                                <button class="resume__send">
+                                    Отправить файл
+                                </button>
+
+                            </form>
+                        </div>
+                        <div class="sidebar">
+                            <div class="sidebar__wrapper">
+                                <div class="sidebar__menu">
+                                    <h5 class="sidebar__menu-title">
+                                        Министерство
+                                    </h5>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-active"
+                                            href="#">О
+                                            министерстве</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
+                                            href="#">Руководство</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Структура</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Работа в
+                                            Министерстве</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
+                                            href="#">Подведомственные
+                                            организации</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Представители
+                                            в
+                                            регионах</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Закрепленные
+                                            за
+                                            территориями</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Представители
+                                            за
+                                            рубежом</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Открытые
+                                            данные</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Открытый
+                                            реестр
+                                            обращений</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Услуги
+                                            министерства</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Участие
+                                            Республики
+                                            Узбекистан
+                                            в СНГ</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Совет
+                                            молодёжи</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Вопросы
+                                            духовности и
+                                            государственного языка</a></div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
+                                            href="#">Противодействие
+                                            коррупции</a>
+                                    </div>
+                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Гендерное
+                                            равенство</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

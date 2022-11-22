@@ -1,0 +1,17 @@
+label{
+    display: block;
+}
+.resume__wrapper{
+    padding-top: 100px;
+}
+.resume__form-vacancy{
+    display: block;
+    width: 100%;
+}
+.resume__form-name{
+    display: block;
+    width: 100%;
+}
+.resume__form-wrapper{
+    display: flex;
+}

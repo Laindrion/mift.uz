@@ -114,7 +114,7 @@ $(function () {
   });
 });
 
-// Vacancy
+// Accardeon
 
 let acc = document.getElementsByClassName("vacancy__btn");
 let i;
