@@ -1,0 +1,68 @@
+table, th, tr, td {
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.territories__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.territories__inner-box {
+    padding: 0 18px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.22);
+    box-shadow: 0px 0px 19px 0px rgba(66, 116, 155, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: .4s all;
+    width: 994px;
+}
+
+.territories__btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 0px rgba(66, 116, 155, 0.2);
+    text-align: left;
+    width: 994px;
+    padding: 20px 20px;
+    position: relative;
+    transition: .5s;
+    font-size: 17px;
+}
+
+.territories__btn:after {
+    content: '+';
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    color: #777;
+}
+
+.territories__btn:hover {
+    background-color: #97a1b30d;
+    transition: .5s;
+}
+
+.territories__active {
+    background-color: #97a1b30d;
+}
+
+.territories__btn-active::after {
+    content: '-';
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}

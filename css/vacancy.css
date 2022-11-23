@@ -127,12 +127,6 @@
     background: #2e55a2;
 }
 
-table,
-th,
-td {
-    border: 1px solid #0207175f;
-}
-
 table {
     margin-top: 30px;
 }
