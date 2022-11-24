@@ -1,17 +1,152 @@
-label{
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+select {
     display: block;
+    padding-left: 10px;
 }
-.resume__wrapper{
-    padding-top: 100px;
-}
-.resume__form-vacancy{
-    display: block;
-    width: 100%;
-}
-.resume__form-name{
-    display: block;
-    width: 100%;
-}
-.resume__form-wrapper{
+.resume__btn-wrapper{
+    margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
+}
+.resume__btn-choice + .resume__btn-choice{
+    margin-left: 20px;
+}
+
+.resume__cover {
+    /* margin-top: 70px; */
+    box-shadow: 0px 0px 20px 4px rgba(34, 60, 80, 0.2);
+    padding: 40px 30px;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-bottom: 60px;
+}
+
+.resume__form {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.344);
+    border-radius: 8px;
+    padding: 6px 12px;
+    height: 34px;
+    font-size: 16px;
+    display: block;
+    outline: none;
+}
+
+.resume__form-active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+
+
+.resume__title {
+    padding-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #2781b9;
+}
+
+.resume__form-wrapper {
+    margin-bottom: 10px;
+}
+
+.resume__form-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__form-date-item {
+    width: 270px;
+}
+
+.resume__place-of-birth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regions__select {
+    margin-right: 20px;
+}
+
+.resume__place-item {
+    margin-right: 20px;
+}
+
+.resume__form-contact-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__form-contact-item {
+    width: 270px;
+}
+
+.resume__form-education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__form-graduate {
+    display: flex;
+}
+
+.resume__form-graduate-item {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.resume__form-specialization {
+    width: 630px;
+}
+
+.resume__addition {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__form-btn-cover {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__btn {
+    width: 420px;
+    border: none;
+    background: #264687;
+    padding: 5px 0;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+textarea {
+    width: 100%;
+    width: 420px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.resume__submit-cover {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.resume__send {
+    background: #264687;
+    border: none;
+    color: #fff;
+    padding: 0 30px;
+    height: 40px;
+    border-radius: 10px;
 }
