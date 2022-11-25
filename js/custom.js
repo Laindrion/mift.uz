@@ -36,27 +36,6 @@
     closeBtn.classList.remove('active')
   }
 
-  // HEADER SLIDER
-  $('.news__box').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.arrow__prev-cover'),
-    nextArrow: $('.arrow__next-cover'),
-    asNavFor: '.news__img-box',
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    fade: true
-  }).slickAnimation();
-  $('.news__img-box').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.news__box',
-    fade: true,
-    speed: 300
-  })
-
   // SCROLL ANIMATION
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry => {

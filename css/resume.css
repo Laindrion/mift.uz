@@ -12,12 +12,14 @@ select {
     display: block;
     padding-left: 10px;
 }
-.resume__btn-wrapper{
+
+.resume__btn-wrapper {
     margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
 }
-.resume__btn-choice + .resume__btn-choice{
+
+.resume__btn-choice+.resume__btn-choice {
     margin-left: 20px;
 }
 
@@ -32,13 +34,26 @@ select {
 
 .resume__form {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.344);
-    border-radius: 8px;
-    padding: 6px 12px;
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 7px 12px;
+    background:
+        linear-gradient(90deg, #0048b4, #0048b4) center bottom/0 2px no-repeat,
+        linear-gradient(90deg, rgb(191, 199, 218), rgb(191, 199, 218)) left bottom/100% 2px no-repeat,
+        linear-gradient(90deg, #ddebf74c, #ddebf74c) left bottom/100% no-repeat;
+    transition: background-size .3s ease;
     height: 34px;
     font-size: 16px;
     display: block;
     outline: none;
+    /* box-shadow: 0px -1px 10px -1px rgba(34, 60, 80, 0.2) inset; */
+}
+
+.resume__form:valid,
+.resume__form:focus {
+    background-size: 100% 2px, 100% 2px, 100%;
 }
 
 .resume__form-active {
@@ -117,16 +132,6 @@ select {
     justify-content: space-between;
 }
 
-.resume__btn {
-    width: 420px;
-    border: none;
-    background: #264687;
-    padding: 5px 0;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
-}
-
 textarea {
     width: 100%;
     width: 420px;
@@ -142,11 +147,69 @@ textarea {
     margin-top: 30px;
 }
 
+.resume__btn {
+    width: 420px;
+    border: none;
+    background: #2e539e;
+    padding: 5px 0;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    /* box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset; */
+}
+
+.resume__download::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/resume/download.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.resume__upload::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/resume/upload.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 .resume__send {
-    background: #264687;
+    background: #2e539e;
     border: none;
     color: #fff;
-    padding: 0 30px;
+    padding: 0 30px 0 40px;
     height: 40px;
     border-radius: 10px;
+    position: relative;
+}
+
+.resume__send::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/resume/send.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }

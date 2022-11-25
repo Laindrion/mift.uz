@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="css/sidebar.css">
 
-    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/events.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -133,7 +133,7 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a href="##" class="menu__list-link">
+                                <a href="services.html" class="menu__list-link">
                                     Услуги министерства
                                 </a>
                             </li>
@@ -367,218 +367,75 @@
     </nav>
 
     <main>
-        <section class="resume">
+        <section class="events">
             <div class="page__header">
                 <h6 class="menu__title">
                     Министерство
                 </h6>
-                <h3 class="page__title">Работа в министерстве</h3>
+                <h3 class="page__title">
+                    Мероприятия
+                </h3>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="global__wrapper">
+                        <div class="events__wrapper">
 
+                            <div class="events__box">
 
-                        <div class="resume__wrapper">
-                            <div class="resume__btn-wrapper">
-                                <a class="resume__btn-choice" href="vacancy.html">Основные</a>
-                                <a class="resume__btn-choice" href="resume.html">Резюме</a>
-                            </div>
-                            <div class="resume__cover">
-                                <h3 class="resume__title">
-                                    Оязательные поля
-                                </h3>
-
-                                <form class="resume__form-cover" action="">
-
-                                    <div class="resume__form-wrapper">
-                                        <label for="vacancy">Прием заявок на должность *</label>
-                                        <input class="resume__form" type="text" name="" id="vacancy"
-                                            placeholder="Вакансия" required>
-                                    </div>
-
-                                    <div class="resume__form-wrapper">
-                                        <label for="full-name">ФИО *</label>
-                                        <input class="resume__form" type="text" name="" id="full-name"
-                                            placeholder="Фамилия, Имя, Отчество" required>
-                                    </div>
-
-                                    <div class="resume__form-wrapper resume__form-date">
-                                        <label for="date-of-birth">Дата рождения *
-                                            <input class="resume__form resume__form-date-item" type="text" name=""
-                                                id="date-of-birth" required>
-                                        </label>
-
-
-                                        <label for="nationality">Национальность *
-                                            <input class="resume__form resume__form-date-item" type="text" name=""
-                                                id="nationality" required>
-                                        </label>
-
-
-                                        <label for="family-status">Семейное положение *
-                                            <input class="resume__form resume__form-date-item" type="text" name=""
-                                                id="family-status" required>
-                                        </label>
-                                    </div>
-
-                                    <label class="resume__place-label">Место жительства *</label>
-                                    <div class="resume__form-wrapper resume__place-of-birth">
-
-                                        <select class="regions__select" id="regions" name="region-list" form="carform">
-                                            <option value="1">Регион</option>
-                                            <option value="2">Ташкент</option>
-                                            <option value="3">Ташкентская Область</option>
-                                            <option value="4">Джизакская Область</option>
-                                            <option value="5">Самаркандская Область</option>
-                                            <option value="6">Хорезмская Область</option>
-                                            <option value="7">Сурхандарьинская Область</option>
-                                            <option value="8">Сырдарьинская Область</option>
-                                            <option value="9">Наманганская Область</option>
-                                            <option value="10">Навоийская Область</option>
-                                            <option value="11">Кашкадарьинская Область</option>
-                                            <option value="12">Андижанская Область</option>
-                                            <option value="13">Бухарская Область</option>
-                                            <option value="14">Центральный Область</option>
-                                            <option value="15">Республика Каракалпакистан</option>
-                                            <option value="16">Ферганская Область</option>
-                                        </select>
-                                        <input class="resume__form resume__place-item" type="text" name="" id="region"
-                                            placeholder="Район(город)" required>
-                                        <input class="resume__form" type="text" name="" id="address" placeholder="Адрес"
-                                            required>
-                                    </div>
-
-                                    <div class="resume__form-wrapper resume__form-contact-number">
-                                        <label for="phone__number">Телефон *
-                                            <input class="resume__form resume__form-contact-item" type="text" name=""
-                                                id="phone__number" required>
-                                        </label>
-
-                                        <label for="email">Эл.почта *
-                                            <input class="resume__form resume__form-contact-item" type="text" name=""
-                                                id="email" required>
-                                        </label>
-                                        <label for="TIN">ИНН *
-                                            <input class="resume__form resume__form-contact-item" type="text" name=""
-                                                id="TIN" required>
-                                        </label>
-                                    </div>
-
-                                    <div class="resume__form-wrapper resume__form-education">
-                                        <label for="education">Образование *
-                                            <input class="resume__form" type="text" name="" id="education" required>
-                                        </label>
-
-                                        <label for="specialization">Специальность *
-                                            <input class="resume__form resume__form-specialization" type="text" name=""
-                                                id="specialization" required>
-                                        </label>
-                                    </div>
-
-                                    <label>Какой ВУЗ окончили *</label>
-                                    <div class="resume__form-wrapper resume__form-graduate">
-                                        <input class="resume__form resume__form-graduate-item" type="text" name=""
-                                            id="specialization" placeholder="Год" required>
-                                        <input class="resume__form" type="text" name="" id="name-of-uni"
-                                            placeholder="Наименование ВУЗ" required>
-                                    </div>
-
-
-                                    <div class="resume__form-wrapper resume__addition">
-                                        <label>Мотивация для трудоустройства
-                                            <textarea name="" id="" cols="30" rows="10"
-                                                placeholder="Этот пункт очень важен! Вывод при принятии на работу будет осуществляться, исходя как Вы коротко, ясно и содержательно опишете мотивацию трудоустройства."></textarea>
-                                        </label>
-
-
-                                        <label>Дополнительные данные
-                                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                                        </label>
-                                    </div>
-
-                                    <div class="resume__form-wrapper resume__form-btn-cover">
-                                        <button class="resume__download resume__btn">
-                                            Скачать резюме
-                                        </button>
-                                        <button class="resume__upload resume__btn">
-                                            Загрузить файл
-                                        </button>
-                                    </div>
-
-                                    <div class="resume__form-wrapper resume__submit-cover">
-                                        <div>
-                                            <input class="resume__form" type="text"
-                                                placeholder="Введите код с картинки" required>
-                                            <div>
-                                                <img src="" alt="">
-                                                <a class="resume__refresh" href="##"></a>
-                                            </div>
+                                <div class="events__top">
+                                    <div class="events__date-box">
+                                        <div class="events__date-slider-box">
+                                            <span class="events__date-slider-item">2022</span>
+                                            <span class="events__date-slider-item">Янв</span>
+                                            <span class="events__date-slider-item">Фев</span>
+                                            <span class="events__date-slider-item">Мар</span>
+                                            <span class="events__date-slider-item">Апр</span>
+                                            <span class="events__date-slider-item">Май</span>
+                                            <span class="events__date-slider-item">Июн</span>
+                                            <span class="events__date-slider-item">Июл</span>
+                                            <span class="events__date-slider-item">Авг</span>
+                                            <span class="events__date-slider-item">Сен</span>
+                                            <span class="events__date-slider-item">Окт</span>
+                                            <span class="events__date-slider-item">Ноя</span>
+                                            <span class="events__date-slider-item">Дек</span>
                                         </div>
+                                        <div class="events__date-arrows">
+                                            <span class="events__arrow-left">
+                                                <img src="images/arrow_prev.png" alt="">
+                                            </span>
+                                            <span class="events__arrow-right">
+                                                <img src="images/arrow_prev.png" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Events date box end -->
 
-                                        <button class="resume__send">
-                                            Отправить файл
+                                    <div class="events__buttons">
+                                        <button class="events__download">
+                                            Скачать план выставок
+                                        </button>
+                                        <select class="events__select">
+                                            Выставки
+                                            <option value="1">Выставки</option>
+                                            <option value="2">Анонсы</option>
+                                        </select>
+                                        <button class="events__btn">
+                                            Сетка
+                                        </button>
+                                        <button class="events__btn">
+                                            Список
                                         </button>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="sidebar">
-                            <div class="sidebar__wrapper">
-                                <div class="sidebar__menu">
-                                    <h5 class="sidebar__menu-title">
-                                        Министерство
-                                    </h5>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-active"
-                                            href="#">О
-                                            министерстве</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
-                                            href="#">Руководство</a>
+
+                                    <div class="events__seacrh-box">
+                                        <input class="events__search" type="text">
                                     </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Структура</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Работа в
-                                            Министерстве</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
-                                            href="#">Подведомственные
-                                            организации</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Представители
-                                            в
-                                            регионах</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Закрепленные
-                                            за
-                                            территориями</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Представители
-                                            за
-                                            рубежом</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Открытые
-                                            данные</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Открытый
-                                            реестр
-                                            обращений</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Услуги
-                                            министерства</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Участие
-                                            Республики
-                                            Узбекистан
-                                            в СНГ</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Совет
-                                            молодёжи</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Вопросы
-                                            духовности и
-                                            государственного языка</a></div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link"
-                                            href="#">Противодействие
-                                            коррупции</a>
-                                    </div>
-                                    <div class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Гендерное
-                                            равенство</a>
-                                    </div>
+                                </div>
+                                <!-- Events top end -->
+
+                                <div class="events__list">
+                                    <a class="events__item" href="##"></a>
                                 </div>
                             </div>
                         </div>
