@@ -40,9 +40,8 @@ select {
     border-top-right-radius: 3px;
     padding: 7px 12px;
     background:
-        linear-gradient(90deg, #0048b4, #0048b4) center bottom/0 2px no-repeat,
-        linear-gradient(90deg, rgb(191, 199, 218), rgb(191, 199, 218)) left bottom/100% 2px no-repeat,
-        linear-gradient(90deg, #ddebf74c, #ddebf74c) left bottom/100% no-repeat;
+        linear-gradient(90deg, #040074, #040074) center bottom/0 2px no-repeat,
+        linear-gradient(90deg, rgb(191, 199, 218), rgb(191, 199, 218)) left bottom/100% 2px no-repeat;
     transition: background-size .3s ease;
     height: 34px;
     font-size: 16px;

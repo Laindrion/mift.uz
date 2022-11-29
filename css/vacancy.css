@@ -1,3 +1,9 @@
+table,
+th,
+td {
+    border: 1px solid #0207175f;
+}
+
 .regions__select {
     margin-bottom: 15px;
     margin-top: 15px;

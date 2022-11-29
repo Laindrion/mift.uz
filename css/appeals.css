@@ -5,12 +5,39 @@ table {
 table, th, tr, td {
     text-align: center;
     padding: 10px;
+    border: none;
 }
 
 .appeals__wrapper {
     box-shadow: 0px 0px 21px 5px rgba(34, 60, 80, 0.2);
-    padding: 30px 50px;
+    /* padding: 30px 0; */
     margin-bottom: 40px;
     border-radius: 10px;
     margin-top: 60px;
+}
+
+th {
+    background-color: #05214E;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F4F5;
+}
+
+tr {
+    background: #fff;
+}
+
+td {
+    padding: 20px 0;
+}
+
+tbody, tr {
+    transition: 150ms ease-out all;
+}
+
+tbody, tr:hover {
+    background-color: #EBEBEB;
 }

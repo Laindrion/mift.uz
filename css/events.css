@@ -1,3 +1,225 @@
-.events__top{
+.events__wrapper{
+    margin-bottom: 60px;
+}
+.events__top {
     display: flex;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+}
+
+.events__date-slider-box-cover {
+    width: 390px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.events__date-arrows {
+    position: relative;
+    width: 400px;
+    top: -25px;
+}
+
+.events__date-arrows img {
+    width: 13px;
+    height: 20px;
+}
+
+.events__arrow-left, .events__arrow-right {
+    cursor: pointer;
+}
+
+.events__arrow-left {
+    position: absolute;
+    left: -30px;
+}
+
+.events__arrow-right {
+    position: absolute;
+    right: 0px;
+}
+
+/* 
+    BUTTONS 
+*/
+.events__buttons {
+    font-size: 17px;
+}
+
+.events__btn {
+    border: none;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline;
+}
+
+.events__download {
+    background: rgb(81, 122, 255);
+    color: #fff;
+    margin-right: 10px;
+    transition: .5s ease-in-out;
+}
+
+.events__download:hover {
+    outline: 1px solid rgb(81, 122, 255);
+    background: transparent;
+    color: #000;
+}
+
+.events__select {
+    border: 1px solid rgb(81, 122, 255);
+    outline: none;
+    padding: 4px 6px;
+    margin-right: 10px
+}
+
+.events__grid-btn {
+    background: rgb(81, 122, 255);
+    padding: 2px 30px;
+    margin-right: 10px;
+    transition: 0.5s ease-in-out all;
+    color: #fff;
+    position: relative;
+}
+
+.events__grid-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/services/events/grid.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s all ease-in-out;
+}
+
+.events__grid-btn:hover {
+    background: transparent;
+    outline: 1px solid rgb(81, 122, 255);
+    color: #000;
+}
+
+.events__grid-btn:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/services/events/grid-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.events__list-btn {
+    background: rgb(81, 122, 255);
+    padding: 2px 30px;
+    margin-right: 20px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.events__list-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/services/events/list.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s all ease-in-out;
+}
+
+.events__list-btn:hover {
+    outline: 1px solid rgb(81, 122, 255);
+    background: transparent;
+    color: #000;
+}
+
+.events__list-btn:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/services/events/list-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.events__search {
+    border-radius: 30px;
+    padding: 0 15px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #1a4780;
+    outline: none;
+}
+
+/* Events list */
+
+.events__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* height: 500px; */
+    gap: 40px;
+}
+
+/* .events__item:first-child {
+    grid-row: 1 / 3 span;
+} */
+
+.events__item {
+    background: transparent;
+    box-shadow: -10px 4px 10px 2px rgba(34, 60, 80, 0.2);
+    padding: 0 40px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.events__item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.events__item-inner {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.events__date {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.event__text {
+    width: 300px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.events__location {
+    display: block;
+    margin-bottom: 30px;
 }

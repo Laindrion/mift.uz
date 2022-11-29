@@ -73,52 +73,65 @@
     prevArrow: $('.links__arrow-left'),
     nextArrow: $('.links__arrow-right'),
   })
+
+  // MANAGEMENT
+  $(function () {
+    $('.management__item-1').magnificPopup({
+      closeOnBgClick: true,
+      fixedBgPos: false,
+      // delegate: 'a',
+      callbacks: {
+        beforeOpen: function () {
+          this.st.mainClass = this.st.el.attr('data-effect');
+        }
+      },
+    });
+    $(document).on('click', '.modal-dismiss', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+    });
+  });
+
+  // Vacacny accordeon
+  let acc = document.getElementsByClassName("vacancy__btn");
+  let i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("vacancy__btn-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+  // Territories accordeon
+  let acc1 = document.getElementsByClassName("territories__btn");
+  let o;
+  for (i = 0; i < acc1.length; i++) {
+    acc1[i].addEventListener("click", function () {
+      this.classList.toggle("territories__btn-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+
+  // EVENTS
+  $('.events__date-slider-box').slick({
+    slidesToShow: 7,
+    slidesToScroll: 6,
+    infinite: false,
+    prevArrow: $('.events__arrow-left'),
+    nextArrow: $('.events__arrow-right'),
+    speed: 800
+
+  })
 })(window.jQuery);
 
-// MANAGEMENT
-$(function () {
-  $('.management__item-1').magnificPopup({
-    closeOnBgClick: true,
-    fixedBgPos: false,
-    // delegate: 'a',
-    callbacks: {
-      beforeOpen: function () {
-        this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-  });
-  $(document).on('click', '.modal-dismiss', function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
-});
-
-// Vacacny accordeon
-let acc = document.getElementsByClassName("vacancy__btn");
-let i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("vacancy__btn-active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
-// Territories accordeon
-let acc1 = document.getElementsByClassName("territories__btn");
-let o;
-for (i = 0; i < acc1.length; i++) {
-  acc1[i].addEventListener("click", function () {
-    this.classList.toggle("territories__btn-active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}

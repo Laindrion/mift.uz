@@ -8,12 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-table,
-th,
-td {
-    border: 1px solid #0207175f;
-}
-
 /* Header */
 ul,
 li {

@@ -1,12 +1,19 @@
 table, th, tr, td {
     text-align: center;
+    border: none;
     padding: 10px;
+    border: 1px solid #0207175f;
 }
 
 table {
     margin-top: 30px;
     margin-bottom: 10px;
     width: 100%;
+}
+
+table, th, tr, td {
+    text-align: center;
+    padding: 10px;
 }
 
 .territories__container {
