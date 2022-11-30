@@ -79,7 +79,6 @@
     $('.management__item-1').magnificPopup({
       closeOnBgClick: true,
       fixedBgPos: false,
-      // delegate: 'a',
       callbacks: {
         beforeOpen: function () {
           this.st.mainClass = this.st.el.attr('data-effect');
