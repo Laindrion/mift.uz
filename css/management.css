@@ -52,7 +52,7 @@
 
 .management__links {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 212px;
     display: flex;
     flex-direction: column;
