@@ -1508,5 +1508,8 @@ section {
     margin-top: 10px;
     letter-spacing: 2px;
     z-index: 2;
-    font-size: 60px;
+    font-size: 55px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }

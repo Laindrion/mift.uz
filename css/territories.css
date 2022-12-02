@@ -15,7 +15,11 @@ table, th, tr, td {
     text-align: center;
     padding: 10px;
 }
-
+th p{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
 .territories__container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -30,6 +34,23 @@ table, th, tr, td {
     overflow: hidden;
     transition: .4s all;
     width: 994px;
+}
+.territories__title{
+    position: relative;
+    padding-left: 25px;
+}
+.territories__title::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/territories/check.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 
 .territories__btn {

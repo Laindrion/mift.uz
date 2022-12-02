@@ -1,0 +1,117 @@
+body, p {
+    color: #000;
+    font-family: 'Libertinus Serif Display';
+}
+
+.post__container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sections__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.dot {
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 0 10px;
+}
+
+.post__title {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 39px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 47px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+.post__img-cover {
+    width: 1000px;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+.post__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.post__text-top {
+    display: flex;
+    align-items: center;
+}
+
+.post__date {
+    position: relative;
+    padding-left: 25px;
+    margin-left: 30px;
+    font-size: 19px;
+}
+
+.post__watched {
+    font-size: 19px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.post__watched::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/post/eye.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.post__date::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/services/events/clock.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+.post__text-cover {
+    margin-top: 40px;
+}
+
+.dropcap {
+    display: inline-block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    margin: 2px 5px 0px 0;
+    padding: 8px 2px 8px 11px;
+    font-size: 48px;
+}
+
+.post__text {
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
