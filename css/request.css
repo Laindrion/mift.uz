@@ -72,13 +72,11 @@
 }
 
 .request__list-item-input-1 {
-    border-radius: 20px;
     margin-right: 110px;
 }
 
 .request__list-item-input {
     min-width: 295px;
-    border-radius: 20px;
 }
 .request__list-item-select{
     margin-right: 20px;
@@ -97,6 +95,23 @@
     border-radius: 20px;
     text-align: center;
     margin-top: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.request__upload-label::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/services/request/download.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 47%;
+    transform: translateY(-50%);
 }
 
 
@@ -104,6 +119,7 @@
     padding: 7px 10px;
     border: 1px solid rgba(50, 73, 137, 0.935);
     outline: none;
+    border-radius: 5px;
 }
 
 .request__btn {
