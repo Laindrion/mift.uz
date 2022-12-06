@@ -1,0 +1,123 @@
+.request__container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.request__part {
+    display: flex;
+    justify-content: space-around;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.request__part::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(50, 73, 137, 0.935);
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.request__part-item-number {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    color: #000;
+    border: 1px solid #29658B;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.request__part-active{
+    background: #29658B;
+    color: #fff;
+    position: relative;
+}
+
+.request__title {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* request list */
+
+.request__list-item {
+    border-top: 1px solid rgb(192, 192, 192);
+    padding: 30px 0;
+}
+
+.request__list-item-title {
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 50%;
+}
+
+.request__list-item-title-1 {
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 25%;
+}
+
+.request__list-item-input-1 {
+    border-radius: 20px;
+    margin-right: 110px;
+}
+
+.request__list-item-input {
+    min-width: 295px;
+    border-radius: 20px;
+}
+.request__list-item-select{
+    margin-right: 20px;
+}
+
+.request__list-item-upload {
+    display: none;
+}
+
+.request__upload-label {
+    color: #fff;
+    background-color: rgba(50, 73, 137, 0.935);
+    padding: 6px 14px;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.request__control {
+    padding: 7px 10px;
+    border: 1px solid rgba(50, 73, 137, 0.935);
+    outline: none;
+}
+
+.request__btn {
+    display: block;
+    font-size: 16px;
+    background-color: rgba(50, 73, 137, 0.935);
+    border-radius: 30px;
+    padding: 6px 14px;
+    margin-top: 40px;
+    color: #fff;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.request__btn:hover {
+    color: #fff;
+}

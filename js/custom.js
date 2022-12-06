@@ -132,5 +132,5 @@
     speed: 800
 
   })
-})(window.jQuery);
 
+})(window.jQuery);

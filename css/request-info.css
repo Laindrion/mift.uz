@@ -1,0 +1,100 @@
+.request-info__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.request-info__title {
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.request-info__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.request-info__box {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+}
+
+.request-info__item + .request-info__item{
+    margin-left: 250px;
+}
+
+.request-info__item {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.request-info__item::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/services/request/right-arrow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    right: -140px;
+    top: 48%;
+    transform: translateY(-50%);
+}
+.request-info__item:last-child:after{
+    display: none;
+}
+
+.request-info__img-cover {
+    margin: 0 auto;
+    width: 105px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.request-info__img {
+    width: 100%;
+    height: auto;
+}
+.request-info__descr{
+    color: #000;
+}
+
+.request-info__download {
+    font-size: 17px;
+    margin-bottom: 40px;
+    color: #000;
+}
+.request-info__download:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+.request-info__btns {
+    display: flex;
+}
+
+.request-info__btn+.request-info__btn {
+    margin-left: 50px;
+}
+
+.request-info__btn {
+    display: block;
+    background: #264687;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.request-info__btn:hover{
+    color: #fff;
+}

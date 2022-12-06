@@ -1329,7 +1329,7 @@ section {
 }
 
 .footer__menu ul li a {
-    color: #ebebe5f7;
+    color: #fffffff7;
 }
 
 .footer__menu-list {
@@ -1386,7 +1386,7 @@ section {
     display: block;
     height: 1px;
     width: 0%;
-    background: rgb(211, 204, 204);
+    background: rgb(255, 255, 255);
     opacity: .5;
     transition: .5s all;
 }
