@@ -37,13 +37,13 @@ th p{
 }
 .territories__title{
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 .territories__title::before{
     content: '';
     position: absolute;
     display: block;
-    background-image: url('../images/territories/check.png');
+    background-image: url('../images/territories/location.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 20px;

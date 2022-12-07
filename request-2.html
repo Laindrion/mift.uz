@@ -382,11 +382,11 @@
                         <div class="request__container">
                             <div class="request__part">
                                 <div class="request__part-item">
-                                    <span class="request__part-item-number request__part-active">1</span>
+                                    <span class="request__part-item-number">1</span>
                                     Часть 1
                                 </div>
                                 <div class="request__part-item">
-                                    <span class="request__part-item-number">2</span>
+                                    <span class="request__part-item-number request__part-active">2</span>
                                     Часть 2
                                 </div>
                                 <div class="request__part-item">
@@ -399,108 +399,238 @@
                                 </div>
                             </div>
                             <h3 class="request__title">
-                                Часть 1. Информация об инвесторе
+                                Часть 2. Информация об инвестиционном проекте
                             </h3>
 
+                            <!-- Item 1 -->
                             <div class="request__list">
                                 <div class="request__list-item">
-                                    <label for="name" class="request__list-item-title">
-                                        Инициатор проекта
-                                    </label>
-                                    <input class="request__list-item-input request__control" type="text" id="name"
-                                        placeholder="Имя">
-                                </div>
-
-                                <div class="request__list-item">
                                     <label class="request__list-item-title">
-                                        Гражданство
-                                    </label>
-
-                                    <select class="request__list-item-select request__control" name="" id="">
-                                        <option value="">Узбекистан</option>
-                                    </select>
-                                </div>
-
-                                <div class="request__list-item">
-                                    <label class="request__list-item-title">
-                                        Название компаний
+                                        Отрасль инвестиции
                                     </label>
                                     <select class="request__list-item-select request__control" name="" id="">
                                         <option value="">Выберите</option>
-                                        <option value="">ЧП</option>
-                                        <option value="">СП</option>
-                                        <option value="">ООО</option>
-                                        <option value="">ООО СП</option>
-                                        <option value="">ООО ИП</option>
+                                        <option value="">Услуги</option>
+                                        <option value="">Производство</option>
+                                        <option value="">Социальная</option>
+                                        <option value="">Другое</option>
                                     </select>
-                                    <input class="request__list-item-input request__control" type="text" id="name"
-                                        placeholder="Название компаний">
                                 </div>
 
+                                <!-- Item 2  -->
                                 <div class="request__list-item">
-                                    <label for="person" class="request__list-item-title">
-                                        Обращаться как физ. лицо
+                                    <label for="project_name" class="request__list-item-title">
+                                        Наименование проектного предложения
                                     </label>
 
-                                    <input class="request__list-item-checkbox request__control" type="checkbox"
-                                        id="person">
+                                    <textarea class="request__list-item-textarea request__control" name=""
+                                        id="project_name" placeholder="Наименование проектного предложения"></textarea>
                                 </div>
 
+                                <!-- Item 3 -->
                                 <div class="request__list-item">
-                                    <label for="tel_number" class="request__list-item-title-1">
-                                        Номер телефона
+                                    <label for="projec_decr" class="request__list-item-title">
+                                        Краткое описание проекта
+                                    </label>
+                                    <textarea name="" id="projec_decr"
+                                        class="request__list-item-textarea request__control"
+                                        placeholder="например, строительство торгового центра премиум-класса"></textarea>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="request__list-item">
+                                    <label class="request__list-item-title">
+                                        Адрес проекта
                                     </label>
 
-                                    <input class="request__list-item-input-1 request__control" type="text"
-                                        id="tel_number">
+                                    <select class="request__list-item-select request__control" name="" id="">
+                                        <option value="">Выберите</option>
+                                        <option value="">Ташкент</option>
+                                        <option value="">Ташкентская область</option>
+                                        <option value="">Андижанская область</option>
+                                        <option value="">Бухарская область</option>
+                                        <option value="">Джизаксая область</option>
+                                        <option value="">Кашкадарьинская область</option>
+                                        <option value="">Навоийская область</option>
+                                        <option value="">Наманганская область</option>
+                                        <option value="">Самаркандская область</option>
+                                        <option value="">Сурхандарьинская область</option>
+                                        <option value="">Сырдарьинская область</option>
+                                        <option value="">Ферганская область</option>
+                                        <option value="">Хорезмская область</option>
+                                        <option value="">Республика Каракалпакистан</option>
+                                        <option value="">Не определён</option>
+                                    </select>
+                                </div>
 
-
-                                    <label for="work_tel_number" class="request__list-item-title-1">
-                                        Рабочий номер телефона
+                                <!-- Item 5 -->
+                                <div class="request__list-item">
+                                    <label for="full_address" class="request__list-item-title">
+                                        Полный адрес проекта
                                     </label>
 
                                     <input class="request__list-item-input request__control" type="text"
-                                        id="work_tel_number">
+                                        placeholder="Полный адрес проекта" id="full_address">
                                 </div>
 
+                                <!-- Item 6 -->
                                 <div class="request__list-item">
-                                    <label for="email" class="request__list-item-title">
-                                        Эл.почта
+                                    <label for="area_plot" class="request__list-item-title">
+                                        Площадь земельного участка
                                     </label>
 
                                     <input class="request__list-item-input request__control" type="text"
-                                        placeholder="Эл.почта" id="email">
+                                        placeholder="Площадь земельного участка" id="area_plot">
                                 </div>
 
+                                <!-- Item 7 -->
                                 <div class="request__list-item">
-                                    <span class="request__list-item-title">
-                                        Пожалуйста загрузите отсканированную копию паспорта, подтверждающую вашу
-                                        личность (.jpg, .png)
-                                    </span>
-
-                                    <label class="request__upload-label" for="upload1">
-                                        Выберите файл
-                                        <input class="request__list-item-upload request__control" type="file"
-                                            accept="image/png, image/jpeg" id="upload1">
+                                    <label for="workplace" class="request__list-item-title">
+                                        Новые рабочие места
                                     </label>
+
+                                    <input class="request__list-item-input request__control" type="number"
+                                        id="workplace" placeholder="Новые рабочие места">
+
                                 </div>
 
+                                <!-- Item 8 -->
                                 <div class="request__list-item">
-                                    <span class="request__list-item-title">
-                                        Пожалуйста загрузите копию ИНН (идентификационного номера налогоплательщика)
-                                        (.jpg, .png)
-                                    </span>
-
-                                    <label class="request__upload-label" for="upload2">Выберите файл
-                                        <input class="request__list-item-upload request__control" type="file"
-                                            accept="image/png, image/jpeg" id="upload2">
+                                    <label for="project_deadline" class="request__list-item-title">
+                                        Срок запуска проекта
                                     </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="project_deadline" placeholder="Срок запуска проекта">
+
+                                </div>
+
+                                <h3 class="request__title">
+                                    Инфраструктурное обеспечение
+                                </h3>
+                                <!-- Item 9 -->
+                                <div class="request__list-item">
+                                    <label for="voltage class"
+                                        class="request__list-item-title request__icon request__icon-1">
+                                        Высокий класс напряжения
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="voltage class" placeholder="Высокий класс напряжения">
+
+                                </div>
+
+                                <!-- Item 10 -->
+                                <div class="request__list-item">
+                                    <label for="free_power"
+                                        class="request__list-item-title request__icon request__icon-1">
+                                        Свободная мощность
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text" id="free_power"
+                                        placeholder="Свободная мощность">
+                                </div>
+
+                                <!-- Item 11 -->
+                                <div class="request__list-item">
+                                    <label for="remoteness1"
+                                        class="request__list-item-title request__icon request__icon-1">
+                                        Удаленность
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="remoteness1" placeholder="Удаленность">
+
+                                </div>
+
+                                <!-- Item 12 -->
+                                <div class="request__list-item">
+                                    <label for="water_supply"
+                                        class="request__list-item-title request__icon request__icon-2">
+                                        Источник водоснабжения
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="water_supply" placeholder="Источник водоснабжения">
+
+                                </div>
+
+                                <!-- Item 13 -->
+                                <div class="request__list-item">
+                                    <label for="remoteness2"
+                                        class="request__list-item-title request__icon request__icon-2">
+                                        Удаленность
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="remoteness2" placeholder="Удаленность">
+
+                                </div>
+
+                                <!-- Item 14 -->
+                                <div class="request__list-item">
+                                    <label for="gas_supply"
+                                        class="request__list-item-title request__icon request__icon-3">
+                                        Газоснабжение
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text" id="gas_supply"
+                                        placeholder="Газоснабжение">
+
+                                </div>
+
+                                <!-- Item 15 -->
+                                <div class="request__list-item">
+                                    <label for="motorway"
+                                        class="request__list-item-title request__icon request__icon-4">
+                                        Автомагистраль
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text" id="motorway"
+                                        placeholder="Автомагистраль">
+
+                                </div>
+
+                                <!-- Item 16 -->
+                                <div class="request__list-item">
+                                    <label for="remoteness3"
+                                        class="request__list-item-title request__icon request__icon-4">
+                                        Удаленность
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="remoteness3" placeholder="Удаленность">
+
+                                </div>
+
+                                <!-- Item 17 -->
+                                <div class="request__list-item">
+                                    <label for="railroad"
+                                        class="request__list-item-title request__icon request__icon-5">
+                                        ж / д станция
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text" id="railroad"
+                                        placeholder="ж / д станция">
+
+                                </div>
+
+                                <!-- Item 18 -->
+                                <div class="request__list-item">
+                                    <label for="remoteness4"
+                                        class="request__list-item-title request__icon request__icon-5">
+                                        Удаленность
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="text"
+                                        id="remoteness4" placeholder="Удаленность">
 
                                 </div>
                             </div>
 
                             <div class="request__btn-cover">
-                                <a href="request-2.html" class="request__btn">Следующий</a>
+                                <a href="request.html" class="request__btn request__btn2">Предыдущий</a>
+                                <a href="request-3.html" class="request__btn">Следующий</a>
                             </div>
 
 

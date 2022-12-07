@@ -39,7 +39,7 @@
     position: relative;
 }
 
-.request__part-active{
+.request__part-active {
     background: #29658B;
     color: #fff;
     position: relative;
@@ -48,7 +48,8 @@
 .request__title {
     font-weight: 500;
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
@@ -57,9 +58,12 @@
 .request__list-item {
     border-top: 1px solid rgb(192, 192, 192);
     padding: 30px 0;
+    display: flex;
+    align-items: center;
 }
 
 .request__list-item-title {
+    display: block;
     letter-spacing: 1px;
     font-size: 18px;
     width: 50%;
@@ -78,8 +82,19 @@
 .request__list-item-input {
     min-width: 295px;
 }
-.request__list-item-select{
+
+.request__list-item-select {
     margin-right: 20px;
+}
+
+.request__list-item-textarea {
+    height: 75px;
+    padding-left: 15px;
+    padding-right: 5px;
+    min-width: 50%;
+    min-width: 50%;
+    width: auto;
+    max-width: 50%;
 }
 
 .request__list-item-upload {
@@ -100,7 +115,7 @@
     position: relative;
 }
 
-.request__upload-label::after{
+.request__upload-label::after {
     content: '';
     position: absolute;
     display: block;
@@ -117,9 +132,15 @@
 
 .request__control {
     padding: 7px 10px;
-    border: 1px solid rgba(50, 73, 137, 0.935);
+    border: none;
+    border-bottom: 1px solid rgba(50, 73, 137, 0.935);
     outline: none;
     border-radius: 5px;
+}
+
+.request__btn-cover{
+    display: flex;
+    justify-content: end;
 }
 
 .request__btn {
@@ -130,10 +151,86 @@
     padding: 6px 14px;
     margin-top: 40px;
     color: #fff;
-    float: right;
     margin-bottom: 50px;
+    margin-right: 10px;
 }
 
-.request__btn:hover {
+.request__btn2 {
+    background-color: rgb(81, 131, 188);
+}
+
+.request__btn:hover, .request__btn2:hover {
     color: #fff;
+}
+
+
+/* Request 2 */
+.request__icon {
+    position: relative;
+    padding-left: 25px;
+}
+
+.request__icon-1::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/services/request/high-voltage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.request__icon-2::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/services/request/water-drop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.request__icon-3::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/services/request/gas-bottle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+}
+
+.request__icon-4::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/services/request/motorway.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.request__icon-5::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/services/request/tracks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
 }
