@@ -28,6 +28,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -416,8 +421,16 @@
                                         Собственные средства
                                     </label>
 
-                                    <input class="request__list-item-input request__control" type="text"
-                                        placeholder="Полный адрес проекта" id="funds">
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Собственные средства" id="funds">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-1" type="radio">
+                                        <label for="som-1">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-1" type="radio">
+                                        <label for="dollar-1">Доллар</label>
+                                    </div>
                                 </div>
 
                                 <!-- Item 3 -->
@@ -425,8 +438,16 @@
                                     <label for="bank_credit" class="request__list-item-title">
                                         Банковский кредит
                                     </label>
-                                    <input class="request__list-item-input request__control" type="text"
-                                        placeholder="Полный адрес проекта" id="bank_credit">
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Банковский кредит" id="bank_credit">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-2" type="radio">
+                                        <label for="som-2">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-2" type="radio">
+                                        <label for="dollar-2">Доллар</label>
+                                    </div>
                                 </div>
 
                                 <!-- Item 4 -->
@@ -435,8 +456,16 @@
                                         Иностранные инвестиции
                                     </label>
 
-                                    <input class="request__list-item-input request__control" type="text"
-                                        placeholder="Полный адрес проекта" id="foreign_investment">
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Иностранные инвестиции" id="foreign_investment">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-3" type="radio">
+                                        <label for="som-3">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-3" type="radio">
+                                        <label for="dollar-3">Доллар</label>
+                                    </div>
                                 </div>
 
                                 <!-- Item 5 -->
@@ -446,19 +475,28 @@
                                     </label>
 
                                     <input class="request__list-item-input request__control" type="number"
-                                        placeholder="Полный адрес проекта" id="full_address">
+                                        placeholder="Общая стоимость проекта" id="full_address">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-4" type="radio">
+                                        <label for="som-4">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-4" type="radio">
+                                        <label for="dollar-4">Доллар</label>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="request__btn-cover">
-                                <a href="request-2.html" class="request__btn request__btn2">Предыдущий</a>
-                                <a href="##" class="request__btn">Следующий</a>
-                            </div>
-
-
                         </div>
+
+                        <div class="request__btn-cover">
+                            <a href="request-2.html" class="request__btn request__btn2">Предыдущий</a>
+                            <a href="request-4.html" class="request__btn">Следующий</a>
+                        </div>
+
+
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>

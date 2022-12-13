@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-        
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -39,10 +39,11 @@
 
     <link rel="stylesheet" href="css/fonts.css">
 
-    <link rel="stylesheet" href="css/subordinates-structure.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link rel="stylesheet" href="css/request.css">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -371,69 +372,131 @@
     </nav>
 
     <main>
-        <section class="sub-structure">
+        <section class="request">
             <div class="page__header">
                 <h6 class="menu__title">
                     Министерство
                 </h6>
-                <h2 class="page__title">
-                    Подведомственные организации
-                </h2>
+                <h3 class="page__title">
+                    Подать заявку
+                </h3>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="sub-structure__wrapper">
-                        <div class="sub-structure__box">
-                            <div class="sub-structure__board">
-                                <a class="level-1 rectangle" href="##">
-                                    Директор - Мурадов Улугбек Хашимджанович
-                                </a>
+                    <div class="request__wrapper">
+                        <div class="request__container">
+                            <div class="request__part">
+                                <div class="request__part-item">
+                                    <span class="request__part-item-number">1</span>
+                                    Часть 1
+                                </div>
+                                <div class="request__part-item">
+                                    <span class="request__part-item-number">2</span>
+                                    Часть 2
+                                </div>
+                                <div class="request__part-item">
+                                    <span class="request__part-item-number request__part-active">3</span>
+                                    Часть 3
+                                </div>
+                                <div class="request__part-item">
+                                    <span class="request__part-item-number">4</span>
+                                    Часть 4
+                                </div>
                             </div>
-                            <ol class="level-2-wrapper">
-                                <li>
-                                    <a class="level-2 rectangle" href="##">
-                                        Заместитель директора - Кенжаев Бобиржон Собиржонович
-                                    </a>
-                                    <ol class="level-3-wrapper">
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел маркетинговых исследований, а также работы с
-                                            социальными сетями и торговыми порталами
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел по поиску иностранных партнеров и взаимодействию с торговыми
-                                            представительствами
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел по государственной поддержке экспорта
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел содействия в транспортировке экспортируемой продукции
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел содействия в оформлении экспортной документации
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">
-                                            Отдел изучения возможностей внутреннего рынка
-                                        </a>
-                                    </ol>
-                                </li>
-                                <li>
+                            <h3 class="request__title">
+                                Часть 3. Стоимость проекта
+                            </h3>
 
-                                    <ol class="level-3-wrapper-last">
-                                        <a class="level-3 rectangle" href="##">Бухгалтерия</a>
-                                        <a class="level-3 rectangle" href="##">Юрисконсульт</a>
-                                        <a class="level-3 rectangle" href="##">Отдел по хозяйственной деятельности и
-                                            охране
-                                            труда
-                                        </a>
-                                        <a class="level-3 rectangle" href="##">Call center</a>
-                                        <a class="level-3 rectangle" href="##">Отдел ИКТ</a>
-                                    </ol>
-                                </li>
-                            </ol>
+                            <!-- Item 1 -->
+                            <div class="request__list">
+                                <div class="request__list-item">
+                                    <label class="request__list-item-title">
+                                        1 USD = 11284.90 Сум
+                                    </label>
+                                </div>
+
+                                <!-- Item 2  -->
+                                <div class="request__list-item">
+                                    <label for="funds" class="request__list-item-title">
+                                        Собственные средства
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Собственные средства" id="funds">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-1" type="radio">
+                                        <label for="som-1">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-1" type="radio">
+                                        <label for="dollar-1">Доллар</label>
+                                    </div>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="request__list-item">
+                                    <label for="bank_credit" class="request__list-item-title">
+                                        Банковский кредит
+                                    </label>
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Банковский кредит" id="bank_credit">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-2" type="radio">
+                                        <label for="som-2">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-2" type="radio">
+                                        <label for="dollar-2">Доллар</label>
+                                    </div>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="request__list-item">
+                                    <label for="foreign_investment" class="request__list-item-title">
+                                        Иностранные инвестиции
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Иностранные инвестиции" id="foreign_investment">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-3" type="radio">
+                                        <label for="som-3">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-3" type="radio">
+                                        <label for="dollar-3">Доллар</label>
+                                    </div>
+                                </div>
+
+                                <!-- Item 5 -->
+                                <div class="request__list-item">
+                                    <label class="request__list-item-title">
+                                        Общая стоимость проекта
+                                    </label>
+
+                                    <input class="request__list-item-input request__control" type="number"
+                                        placeholder="Общая стоимость проекта" id="full_address">
+
+                                    <div class="request__radio-cover">
+                                        <input class="request__radio" name="request__radio" id="som-4" type="radio">
+                                        <label for="som-4">Сум</label>
+
+                                        <input class="request__radio" name="request__radio" id="dollar-4" type="radio">
+                                        <label for="dollar-4">Доллар</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="request__btn-cover">
+                            <a href="request-3.html" class="request__btn request__btn2">Предыдущий</a>
+                            <a href="##" class="request__btn">Отправить заявку</a>
+                        </div>
+
+
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>

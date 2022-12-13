@@ -46,6 +46,7 @@ a {
     width: 300px;
     margin: 0 auto 40px;
     border-radius: 20px;
+    color: #000;
 }
 
 .level-1-none {
@@ -125,7 +126,8 @@ a {
     width: 70%;
     margin: 0 auto 40px;
     border-radius: 20px;
-    background: #0008e948;
+    background: #05214ee8;
+    color: #fff;
 }
 
 /* .level-2::before {

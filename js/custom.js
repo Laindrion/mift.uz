@@ -77,17 +77,10 @@
   // MANAGEMENT
   $(function () {
     $('.management__item-1').magnificPopup({
-      closeOnBgClick: true,
-      fixedBgPos: false,
-      callbacks: {
-        beforeOpen: function () {
-          this.st.mainClass = this.st.el.attr('data-effect');
-        }
-      },
-    });
-    $(document).on('click', '.modal-dismiss', function (e) {
-      e.preventDefault();
-      $.magnificPopup.close();
+      type: 'inline',
+      preloader: 'false',
+      midClcik: true,
+      mainClass: 'mfp-fade',
     });
   });
 
@@ -122,15 +115,24 @@
   }
 
 
-  // EVENTS
-  $('.events__date-slider-box').slick({
-    slidesToShow: 7,
-    slidesToScroll: 6,
-    infinite: false,
-    prevArrow: $('.events__arrow-left'),
-    nextArrow: $('.events__arrow-right'),
-    speed: 800
+  // COSTS
 
-  })
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Конкурс: 19.1%', 'Каталог: 18.1%', 'Аукцион: 62.8%'],
+      datasets: [{
+        data: [19.1, 18.1, 62.8],
+        borderWidth: 1
+      }]
+    },
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+  });
 
 })(window.jQuery);

@@ -138,7 +138,7 @@
     border-radius: 5px;
 }
 
-.request__btn-cover{
+.request__btn-cover {
     display: flex;
     justify-content: end;
 }
@@ -233,4 +233,15 @@
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
+}
+
+/* Request 3 */
+
+.request__radio-cover {
+    margin-left: 30px;
+}
+
+.request__radio {
+    margin-left: 15px;
+    padding: 30px;
 }

@@ -3,7 +3,8 @@
     margin-bottom: 120px;
     margin-top: 70px;
 }
-.management__list{
+
+.management__list {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -23,9 +24,7 @@
     box-shadow: 13px 9px 19px 5px rgba(34, 60, 80, 0.2);
 }
 
-.management__item-1:hover {
-
-}
+.management__item-1:hover {}
 
 .management__item-img--wrapper {
     width: 250px;
@@ -153,7 +152,6 @@
     background: #fff;
     padding: 20px 20px 20px 20px;
     margin: 50px auto 20px auto;
-    border-radius: 20px;
 }
 
 .management__info-cover {
@@ -204,4 +202,40 @@
 .modal-dismiss-img {
     width: 35px;
     height: 35px;
+}
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
 }
