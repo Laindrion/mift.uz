@@ -1,6 +1,7 @@
 .request__container {
     margin-top: 40px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .request__part {
@@ -49,7 +50,7 @@
     font-weight: 500;
     font-size: 26px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 }
 
@@ -244,4 +245,103 @@
 .request__radio {
     margin-left: 15px;
     padding: 30px;
+}
+
+/* Request 4 */
+
+.request__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request__list-map-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.request__list-map-text {
+    margin-bottom: 10px;
+}
+
+.request__list-map-link {
+    margin-bottom: 10px;
+    border: 1px solid rgb(53, 74, 177);
+    background: transparent;
+    padding: 5px 40px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.request__list-map-link:hover {
+    background-color: #264687;
+    color: #fff;
+}
+
+.request__list-upload-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.request__list-upload-text {
+    max-width: 596px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.request__list-upload-btn {}
+
+.request__list-map-img {
+    max-width: 360px;
+}
+
+.request__list-upload-btn {
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: .5s all;
+}
+
+.request__list-upload-btn:hover {
+    color: #fff;
+    background-color: #264687;
+}
+
+.request__list-upload {
+    display: none;
+}
+.request__list-captcha-cover{
+    margin-left: 140px;
+}
+.request__list-captcha-input {
+    width: 400px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.request__list-checkbox-cover{
+    margin-left: 100px;
+}
+
+.request__list-checkbox {
+    font-size: 18px;
+}
+
+
+/* Modal */
+.request__modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    background-color: #fff;
+    padding: 10px 40px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.request__modal-map{
+    max-width: 568px;
 }

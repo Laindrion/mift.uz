@@ -156,7 +156,7 @@
                                 </a>
                             </li>
                             <li class="menu__list-item dropdown-2">
-                                <a href="##" class="menu__list-link menu__list-link--hover">
+                                <a href="costs.html" class="menu__list-link menu__list-link--hover">
                                     Статьи расходов министерства
                                 </a>
                                 <ul class="sub-menu">
@@ -395,94 +395,96 @@
                                     Часть 2
                                 </div>
                                 <div class="request__part-item">
-                                    <span class="request__part-item-number request__part-active">3</span>
+                                    <span class="request__part-item-number">3</span>
                                     Часть 3
                                 </div>
                                 <div class="request__part-item">
-                                    <span class="request__part-item-number">4</span>
+                                    <span class="request__part-item-number request__part-active">4</span>
                                     Часть 4
                                 </div>
                             </div>
                             <h3 class="request__title">
-                                Часть 3. Стоимость проекта
+                                Часть 4. Дополнительная информация о проекте
                             </h3>
 
-                            <!-- Item 1 -->
+
                             <div class="request__list">
-                                <div class="request__list-item">
-                                    <label class="request__list-item-title">
-                                        1 USD = 11284.90 Сум
-                                    </label>
-                                </div>
-
-                                <!-- Item 2  -->
-                                <div class="request__list-item">
-                                    <label for="funds" class="request__list-item-title">
-                                        Собственные средства
-                                    </label>
-
-                                    <input class="request__list-item-input request__control" type="number"
-                                        placeholder="Собственные средства" id="funds">
-
-                                    <div class="request__radio-cover">
-                                        <input class="request__radio" name="request__radio" id="som-1" type="radio">
-                                        <label for="som-1">Сум</label>
-
-                                        <input class="request__radio" name="request__radio" id="dollar-1" type="radio">
-                                        <label for="dollar-1">Доллар</label>
+                                <div class="request__list-wrapper">
+                                    <!-- Item 1 -->
+                                    <div class="request__list-map-cover">
+                                        <h4 class="request__list-map-title">Инвестиционная карта</h4>
+                                        <p class="request__list-map-text">
+                                            Укажите территорию на карте
+                                        </p>
+                                        <button class="request__list-map-link">
+                                            Карта
+                                        </button>
+                                        <div class="request__list-map-img--cover">
+                                            <img class="request__list-map-img" src="images/uz.svg" alt="">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Item 3 -->
-                                <div class="request__list-item">
-                                    <label for="bank_credit" class="request__list-item-title">
-                                        Банковский кредит
-                                    </label>
-                                    <input class="request__list-item-input request__control" type="number"
-                                        placeholder="Банковский кредит" id="bank_credit">
-
-                                    <div class="request__radio-cover">
-                                        <input class="request__radio" name="request__radio" id="som-2" type="radio">
-                                        <label for="som-2">Сум</label>
-
-                                        <input class="request__radio" name="request__radio" id="dollar-2" type="radio">
-                                        <label for="dollar-2">Доллар</label>
+                                    <!-- Item 2  -->
+                                    <div class="request__list-documents">
+                                        <div class="request__list-upload-box">
+                                            <p class="request__list-upload-text">
+                                                Пожалуйста загрузите файлы, относящиеся к инвестиционному проекту –
+                                                фотографии, иллюстрации, картинки (необходимое количество файлов - 1, до
+                                                2
+                                                Мб) (*.png, *.jpg, *.jpeg, .*gif). Убедитесь, что изображения и
+                                                фотографии в
+                                                хорошем качестве.
+                                            </p>
+                                            <label class="request__list-upload-btn">
+                                                Загрузить документы
+                                                <input class="request__list-upload" type="file"
+                                                    accept="image/png, image/jpeg, image/gif">
+                                            </label>
+                                        </div>
+                                        <div class="request__list-captcha-cover">
+                                            <input class="request__list-captcha-input" type="text"
+                                                placeholder="Введите код с картинки">
+                                        </div>
+                                        <div class="request__list-checkbox-cover">
+                                            <label class="request__list-checkbox" for="request__list-checkbox">
+                                                <input id="request__list-checkbox" type="checkbox">
+                                                Я подтверждаю, что предоставленная информация является правдивой, полной
+                                                и точной
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Item 4 -->
-                                <div class="request__list-item">
-                                    <label for="foreign_investment" class="request__list-item-title">
-                                        Иностранные инвестиции
-                                    </label>
+                                    <div class="request__modal">
+                                        <p class="request__modal-title">
+                                            Инвестиционная карта
+                                        </p>
+                                        <div class="request__modal-colors">
+                                            <span class="request__color"></span>
+                                            <span class="request__color"></span>
+                                            <span class="request__color"></span>
+                                            <span class="request__color"></span>
+                                            <span class="request__color"></span>
 
-                                    <input class="request__list-item-input request__control" type="number"
-                                        placeholder="Иностранные инвестиции" id="foreign_investment">
+                                            <div class="request__modal-btns">
+                                                <a class="request__modal-btn" href="##">Очистить маркер</a>
+                                                <a class="request__modal-btn" href="##">Получить маркер</a>
+                                            </div>
+                                        </div>
 
-                                    <div class="request__radio-cover">
-                                        <input class="request__radio" name="request__radio" id="som-3" type="radio">
-                                        <label for="som-3">Сум</label>
+                                        <span class="request__modal-coordinates">
+                                            <strong>Координаты</strong> Z: 6 C: 41.381166,64.573582
+                                        </span>
 
-                                        <input class="request__radio" name="request__radio" id="dollar-3" type="radio">
-                                        <label for="dollar-3">Доллар</label>
-                                    </div>
-                                </div>
+                                        <div class="request__modal-search-box">
+                                            <input class="request__modal-search" type="text" placeholder="Поиск">
+                                        </div>
 
-                                <!-- Item 5 -->
-                                <div class="request__list-item">
-                                    <label class="request__list-item-title">
-                                        Общая стоимость проекта
-                                    </label>
-
-                                    <input class="request__list-item-input request__control" type="number"
-                                        placeholder="Общая стоимость проекта" id="full_address">
-
-                                    <div class="request__radio-cover">
-                                        <input class="request__radio" name="request__radio" id="som-4" type="radio">
-                                        <label for="som-4">Сум</label>
-
-                                        <input class="request__radio" name="request__radio" id="dollar-4" type="radio">
-                                        <label for="dollar-4">Доллар</label>
+                                        <div class="request__modal-map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11990.25818013402!2d69.27582199999999!3d41.29658075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1671002173382!5m2!1sru!2s"
+                                                width="600" height="450" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

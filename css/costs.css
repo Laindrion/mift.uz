@@ -1,3 +1,16 @@
 .costs__statistic-wrapper{
     max-width: 700px;
+    margin-top: 100px;
+}
+.costs__links{
+    margin-bottom: 50px;
+}
+.costs__link{
+    display: block;
+    color: rgb(21, 161, 254);
+    margin-bottom: 20px;
+}
+
+#myChart2{
+    margin-bottom: 30px;
 }
