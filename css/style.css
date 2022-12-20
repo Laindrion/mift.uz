@@ -267,6 +267,7 @@ p {
     width: 100%;
     background-color: #fff;
 
+    background-image: url('../images/menu-bg-right.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
@@ -274,7 +275,6 @@ p {
     overflow: hidden;
     height: 0;
     z-index: -1;
-    background-image: url('../images/menu-bg.jpg');
     transition: height .5s, visibility .1s, opacity .1s;
     box-shadow: 0px 34px 24px 0px rgba(34, 60, 80, 0.22);
 }
@@ -782,9 +782,9 @@ p {
     opacity: .1;
 }
 
-section {
+/* section {
     box-shadow: 0px -19px 37px -20px rgb(230, 232, 244) inset;
-}
+} */
 
 /* PRICING OR INTERACTIVE */
 .pricing {
@@ -893,8 +893,9 @@ section {
 /* UZBEKISTAN MAP OR VENUE*/
 .venue {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../images/bg_releases.jpg');
-    background-repeat: repeat;
+    /* background-image: url('../images/bg_releases.jpg');
+    background-repeat: repeat; */
+    background-color: #0A314D;
     position: relative;
     z-index: 1;
 }
@@ -916,7 +917,6 @@ section {
 
 #UZB372 {
     animation: pen 2s infinite ease;
-
 }
 
 @keyframes pen {
@@ -939,6 +939,7 @@ section {
     letter-spacing: 2px;
     font-family: 'Lbertinus Serif Display';
     text-transform: uppercase;
+    color: #fff;
 }
 
 .uzb__map svg {
@@ -948,15 +949,15 @@ section {
 .uzb__map svg path {
     /* fill: #00394f; */
     height: 652px;
-    stroke: #eee;
-    fill: #7c7c7c;
+    stroke: rgba(0, 0, 0, 0.867);
+    fill: rgb(214, 214, 214);
     stroke-width: .25;
     width: 1000px;
     transition: .6s all;
 }
 
 .uzb__map svg path:hover {
-    fill: #0497eca7;
+    fill: rgba(224, 224, 224, 0.373);
     cursor: pointer;
 }
 
@@ -964,6 +965,10 @@ section {
     position: relative;
     right: -80px;
     height: 0;
+}
+
+.venue__info-member--wrapper {
+    background-color: rgb(35, 35, 35);
 }
 
 .venue__info-member {
@@ -1023,6 +1028,8 @@ section {
     background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat;
     background-position: left;
+    background-color: #fff;
+    background-color: #fff;
     padding-top: 50px;
     position: relative;
     z-index: 1;
@@ -1034,7 +1041,7 @@ section {
     max-width: 430px;
     padding-top: 100px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     position: relative;
 }
 
@@ -1065,8 +1072,8 @@ section {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 30px;
+    row-gap: 40px;
     font-family: 'Libertinus Serif Display';
 }
 
@@ -1125,8 +1132,8 @@ section {
 
 .statistic__container-item {
     text-align: center;
-    background-color: #fff;
-    box-shadow: 4px 3px 13px 0px rgba(34, 60, 80, 0.2);
+    background-color: rgba(255, 255, 255, 0.934);
+    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     height: 250px;
 
@@ -1148,7 +1155,7 @@ section {
     height: 0;
     bottom: 0;
     left: 0;
-    background-color: #2e55a2;
+    background-color: #6487fb;
     transition: .2s all ease-in-out;
 }
 
@@ -1163,8 +1170,9 @@ section {
 
 /* CONTACT */
 .contact {
-    background-image: url('../images/bg_releases.jpg');
-    background-repeat: repeat;
+    /* background-image: url('../images/bg_releases.jpg');
+    background-repeat: repeat; */
+    background-color: #0A314D;
     position: relative;
     z-index: 1;
 }
@@ -1216,7 +1224,10 @@ section {
 }
 
 .links__slider-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
