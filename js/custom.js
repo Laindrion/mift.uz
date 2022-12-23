@@ -1,5 +1,6 @@
 (function ($) {
   "use strict";
+
   // The function of menu
   $('.sub-menu__link').hover(
     function () {
@@ -54,7 +55,6 @@
   $(".navbar-nav .nav-link").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
-
 
   // STATISTICS COUNTER
   $('.statistic__container-number').counterUp({
@@ -113,7 +113,7 @@
       }
     });
   }
-  
+
   // EVENTS
   $('.events__date-slider-box').slick({
     slidesToShow: 7,
@@ -125,9 +125,7 @@
 
   })
 
-
   // COSTS
-
   const pie1 = document.getElementById('myChart');
   var data1 = {
     labels: ['Конкурс: 19.1% (197,000,000)', 'Каталог: 18.1% (186, 293, 382)', 'Аукцион: 62.8% (646, 899, 680)'],

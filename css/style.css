@@ -267,9 +267,6 @@ p {
     width: 100%;
     background-color: #fff;
 
-    background-image: url('../images/menu-bg-right.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
@@ -285,20 +282,23 @@ p {
     top: 0;
     width: 100%;
     height: 2px;
-    background-color: #000;
-    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.349);
+    opacity: .2;
     transition: 1s;
 }
 
 .menu__list::before {
     content: '';
     position: absolute;
-    top: 0;
+    display: block;
+    background-image: url('../images/menu-bg-right.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: .03;
-    transition: 1s;
+    top: 0;
+    left: 0;
+    opacity: .3;
 }
 
 .dropdown:hover>.menu__list {
@@ -895,9 +895,25 @@ p {
     font-family: 'Montserrat', sans-serif;
     /* background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat; */
-    background-color: #0A314D;
+    background-color: #082940;
     position: relative;
     z-index: 1;
+}
+
+.venue::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/section-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .2;
+    background-color: #082940;
 }
 
 .venue::before {
@@ -1172,9 +1188,25 @@ p {
 .contact {
     /* background-image: url('../images/bg_releases.jpg');
     background-repeat: repeat; */
-    background-color: #0A314D;
+    background-color: #082940;
     position: relative;
     z-index: 1;
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../images/section-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .2;
+
 }
 
 .contact__title {

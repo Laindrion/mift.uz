@@ -5,6 +5,8 @@
     grid-column-gap: 30px;
 }
 
+/* Sidebar */
+
 .sidebar {
     padding-top: 100px;
     width: auto;
@@ -55,4 +57,60 @@
 
 .sidebar__menu-active {
     color: #5459f6;
+}
+
+/* Calendar */
+
+.calendar, .calendar__table-header, .calendar__table-cell {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.calendar__table-header {
+    font-size: 12px;
+    color: rgb(100, 97, 97);
+    position: relative;
+}
+
+.calendar__slider {
+    font-weight: 500;
+}
+
+.calendar__table-header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: rgb(100, 97, 97);
+    top: 19px;
+    left: 10px;
+}
+
+td {
+    font-size: 16px;
+}
+
+.sidebar__calendar-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 5px 7px 33px -1px rgba(34, 60, 80, 0.2);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.calendar__top {
+    margin-bottom: 10px;
+}
+
+.calendar__slider {
+    text-align: center;
+}
+
+.calendar__btn {
+    background: transparent;
+    border: none;
+    padding: 3px 5px;
 }
