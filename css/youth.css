@@ -1,0 +1,14 @@
+.youth {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.youth__container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.youth__text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}

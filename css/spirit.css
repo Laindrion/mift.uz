@@ -1,0 +1,15 @@
+.spirit {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.spirit__container{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.spirit__text {
+    color: #000;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+

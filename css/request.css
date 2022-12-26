@@ -314,16 +314,18 @@
 .request__list-upload {
     display: none;
 }
-.request__list-captcha-cover{
+
+.request__list-captcha-cover {
     margin-left: 140px;
 }
+
 .request__list-captcha-input {
     width: 400px;
     padding: 0 10px;
     margin-bottom: 30px;
 }
 
-.request__list-checkbox-cover{
+.request__list-checkbox-cover {
     margin-left: 100px;
 }
 
@@ -331,9 +333,60 @@
     font-size: 18px;
 }
 
+/* Request change */
+.request__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.request__change-input-cover {
+    display: flex;
+
+}
+
+.request__change-input-cover label {
+    display: block;
+    font-size: 18px;
+}
+
+.request__change-input {
+    width: 420px;
+    margin-top: 10px;
+}
+
+.request__change-btn {
+    color: #fff;
+    background-color: #264687;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    padding: 5px 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.request__change-btn::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/request_change/checkmark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.request__change-btn:hover {
+    color: #fff;
+}
 
 /* Modal */
-.request__modal{
+.request__modal {
     display: none;
     position: absolute;
     top: 0;
@@ -342,6 +395,7 @@
     padding: 10px 40px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-.request__modal-map{
+
+.request__modal-map {
     max-width: 568px;
 }

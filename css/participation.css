@@ -1,0 +1,16 @@
+.participation {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.participation__container {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.participation__text {
+    color: #000;
+    display: block;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
