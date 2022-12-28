@@ -40,7 +40,7 @@ select {
     border-top-right-radius: 3px;
     padding: 7px 12px;
     background:
-        linear-gradient(90deg, #040074, #040074) center bottom/0 2px no-repeat,
+        linear-gradient(90deg, #0500a4, #0500a4) center bottom/0 2px no-repeat,
         linear-gradient(90deg, rgb(191, 199, 218), rgb(191, 199, 218)) left bottom/100% 2px no-repeat;
     transition: background-size .3s ease;
     height: 34px;
@@ -58,8 +58,6 @@ select {
 .resume__form-active {
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
-
-
 
 .resume__title {
     padding-bottom: 30px;

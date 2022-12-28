@@ -40,11 +40,12 @@
     display: block;
     width: 150px;
     margin: 0 auto;
-    padding: 5px 10px;
+    padding: 5px 5px;
     background-color: #264687;
     color: #fff;
     border-radius: 10px;
     transition: .5s;
+    font-size: 15px;
 }
 .subordinate__btn:hover{
     color: #fff;
