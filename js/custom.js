@@ -122,13 +122,27 @@
     prevArrow: $('.events__arrow-left'),
     nextArrow: $('.events__arrow-right'),
     speed: 800
-
   })
 
   // ABOUT UZBEKISTAN
   $('.uzbekistan__slider').slick({
     prevArrow: $('.arrow__left'),
-    nextArrow: $('.arrow__right'),
+    nextArrow: $('.arrow__right')
   });
+
+  // 
+  let acc2 = document.getElementsByClassName("invest__guide-btn");
+  let g;
+  for (i = 0; i < acc2.length; i++) {
+    acc2[i].addEventListener("click", function () {
+      this.classList.toggle("invest__guide-btn-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 
 })(window.jQuery);

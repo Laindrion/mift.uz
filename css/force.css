@@ -1,0 +1,26 @@
+.force__container{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.force__item{
+    margin-bottom: 20px;
+}
+.force__img-wrapper{
+    min-height: 200px;
+    margin-bottom: 40px;
+}
+.force__img{
+    width: 100%;
+    height: auto;
+}
+.force__title{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.force__text{
+    line-height: 35px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 10px;
+}

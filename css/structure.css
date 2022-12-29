@@ -40,7 +40,6 @@ ol {
 a {
     display: block;
 }
-
 /* LEVEL 1 */
 
 .level-1 {
@@ -64,7 +63,7 @@ a {
     transform: translateX(-50%);
     width: 2px;
     height: 20px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 /* LEVEL 2 */
@@ -83,7 +82,7 @@ a {
     left: 116px;
     width: 1765px;
     height: 2px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 .level-2-wrapper::after {
@@ -94,7 +93,7 @@ a {
     bottom: -20px;
     width: calc(100% + 20px);
     height: 2px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 .level-2-wrapper li {
@@ -110,7 +109,7 @@ a {
     transform: translateX(-50%);
     width: 2px;
     height: 20px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 .level-2-wrapper>li:last-child::before {
@@ -151,7 +150,7 @@ a {
     transform: translate(-100%, -50%);
     width: 20px;
     height: 2px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 /* LEVEL 3 */
@@ -169,7 +168,7 @@ a {
     left: -20px;
     width: 2px;
     height: calc(100% + 20px);
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 .level-3-wrapper li+li {
@@ -190,7 +189,7 @@ a {
     transform: translate(-100%, -50%);
     width: 19px;
     height: 2px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 /* LEVEL 3 LAST */
@@ -209,7 +208,7 @@ a {
     right: 13px;
     width: 2px;
     height: calc(100% + 20px);
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }
 
 .level-3-wrapper-last li+li {
@@ -229,5 +228,5 @@ a {
     transform: translate(-100%, -50%);
     width: 19px;
     height: 2px;
-    background: rgba(85, 119, 206, 0.499);
+    background: #2781b95d;
 }

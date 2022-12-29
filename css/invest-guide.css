@@ -1,0 +1,101 @@
+.invest__guide-container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.invest__guide-links {
+    margin-bottom: 20px;
+}
+
+.invest__guide-link {
+    display: block;
+    margin: 5px 0;
+    font-size: 20px;
+    background-color: #264687;
+    color: #fff;
+    padding: 0 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.invest__guide-link:hover {
+    color: #fff;
+}
+
+.invest__guide-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 19px 0px rgb(66 116 155 / 20%);
+    width: 994px;
+    padding: 15px 10px;
+    padding-left: 40px;
+    transition: .5s all;
+    position: relative;
+}
+
+.invest__guide-btn:hover {
+    background-color: #97a1b30d;
+}
+
+.invest__guide-btn:after {
+    content: '+';
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    color: #777;
+}
+
+.invest__guide-inner-title {
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+.invest__guide-inner-text {
+    padding-bottom: 20px;
+    line-height: 30px;
+    color: #000;
+    font-size: 16px;
+}
+
+.invest__guide-btn-active {
+    background-color: #97a1b30d;
+    position: relative;
+}
+
+.invest__guide-btn-active::after {
+    content: '-';
+    position: absolute;
+    display: block;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.invest__guide-inner-box {
+    box-shadow: 0px 0px 19px 0px rgb(66 116 155 / 20%);
+    background-color: #fff;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: .4s all;
+    width: 994px;
+}
+
+.invest__guide-inner-menu {
+    list-style-type: disc;
+}
+
+.invest__guide-inner-item {
+    font-weight: 300;
+    margin-left: 20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
