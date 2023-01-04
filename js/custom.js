@@ -84,27 +84,12 @@
     });
   });
 
-  // VACANCY ACCORDEON
-  let acc = document.getElementsByClassName("vacancy__btn");
+  // Accardeon
+  let acc = document.getElementsByClassName("accardeon__btn");
   let i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-      this.classList.toggle("vacancy__btn-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
-
-  // TERRITORIES ACCORDEON
-  let acc1 = document.getElementsByClassName("territories__btn");
-  let o;
-  for (i = 0; i < acc1.length; i++) {
-    acc1[i].addEventListener("click", function () {
-      this.classList.toggle("territories__btn-active");
+      this.classList.toggle("accardeon__btn-active");
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
@@ -130,19 +115,10 @@
     nextArrow: $('.arrow__right')
   });
 
-  // 
-  let acc2 = document.getElementsByClassName("invest__guide-btn");
-  let g;
-  for (i = 0; i < acc2.length; i++) {
-    acc2[i].addEventListener("click", function () {
-      this.classList.toggle("invest__guide-btn-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
+  // investment statistics
+  $('.investments-statistics__slider').slick({
+    prevArrow: $('.arrow__left'),
+    nextArrow: $('.arrow__right')
+  });
 
 })(window.jQuery);
