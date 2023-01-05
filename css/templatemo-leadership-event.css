@@ -168,7 +168,8 @@ body {
 .navbar-nav .nav-link {
   padding: 35px 0;
 }
-.navbar ul{
+
+.navbar ul {
   text-align: center;
   margin: 0 auto;
   align-items: center;
@@ -368,6 +369,19 @@ body {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+
+@media(max-width: 1650px) {
+  .navbar-collapse {
+    margin-left: 100px;
+  }
+
+  .menu__list-title{
+    font-size: 15px;
+  }
+}
+
+
+
 @media screen and (max-width: 1500px) {
   .speakers-text-info {
     padding: 50px;

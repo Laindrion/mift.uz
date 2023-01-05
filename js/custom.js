@@ -56,6 +56,25 @@
     $(".navbar-collapse").collapse("hide");
   });
 
+  // MAP SLIDER
+  $('.region__slider-box').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    prevArrow: $('.arrow__left'),
+    nextArrow: $('.arrow__right')
+  });
+
+  $('.region__slider-box-2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    prevArrow: $('.arrow__left-2'),
+    nextArrow: $('.arrow__right-2')
+  });
+
   // STATISTICS COUNTER
   $('.statistic__container-number').counterUp({
     delay: 10,
@@ -73,16 +92,6 @@
     prevArrow: $('.links__arrow-left'),
     nextArrow: $('.links__arrow-right'),
   })
-
-  // MANAGEMENT
-  $(function () {
-    $('.management__item-1').magnificPopup({
-      type: 'inline',
-      preloader: 'false',
-      midClcik: true,
-      mainClass: 'mfp-fade',
-    });
-  });
 
   // Accardeon
   let acc = document.getElementsByClassName("accardeon__btn");
