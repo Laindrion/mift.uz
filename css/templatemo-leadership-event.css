@@ -154,26 +154,11 @@ body {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
-.navbar {
-  /* height: 10vh; */
-
-}
 
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
 
-
-
-.navbar-nav .nav-link {
-  padding: 35px 0;
-}
-
-.navbar ul {
-  text-align: center;
-  margin: 0 auto;
-  align-items: center;
-}
 
 /*---------------------------------------
   SPEAKERS              
@@ -331,56 +316,37 @@ body {
 }
 
 /*---------------------------------------
-  SOCIAL ICON               
------------------------------------------*/
-.social-icon {
-  margin: 0;
-  padding: 0;
-}
-
-.social-icon li {
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.social-icon-link {
-  background: var(--white-color);
-  border-radius: 50%;
-  font-size: 30px;
-  color: var(--dark-color);
-  display: inline-block;
-  margin: 2px;
-  width: 50px;
-  height: 50px;
-  line-height: 30px;
-  text-align: center;
-  display: inline-flex;
-  place-content: center;
-  place-items: center;
-}
-
-.social-icon-link:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-
-
-/*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
 
-@media(max-width: 1650px) {
-  .navbar-collapse {
-    margin-left: 100px;
-  }
-
-  .menu__list-title{
-    font-size: 15px;
-  }
+.show-sidebar {
+  right: 0;
 }
 
+@media(max-width: 1650px) {
 
+  body {
+    margin: 0;
+  }
+
+  .menu__list-title-text {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    z-index: 11;
+    transition: 0.3s;
+    padding: 4rem 0 0 3rem;
+    background: rgb(233, 233, 233);
+  }
+}
 
 @media screen and (max-width: 1500px) {
   .speakers-text-info {
