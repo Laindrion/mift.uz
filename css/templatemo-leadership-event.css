@@ -335,6 +335,10 @@ body {
     padding-right: 10px;
   }
 
+  .navbar-expand .navbar-nav {
+    flex-direction: column;
+  }
+
   .navbar-nav {
     position: fixed;
     top: 0;
@@ -343,9 +347,35 @@ body {
     height: 100%;
     z-index: 11;
     transition: 0.3s;
-    padding: 4rem 0 0 3rem;
-    background: rgb(233, 233, 233);
+    background: rgb(255, 255, 255);
   }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(152, 152, 152, 0.705);
+  }
+
+  .nav-link {
+    display: block;
+    padding-left: 300px;
+    text-align: left;
+  }
+
+  .navbar-expand .navbar-nav .nav-link {
+    padding: 36px 30px;
+  }
+
+  .menu__list {
+    /* position: static; */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* .dropdown:hover>.menu__list {
+    max-height: 0;
+    transition: height .5s, visibility .3s, opacity .3s;
+  } */
 }
 
 @media screen and (max-width: 1500px) {

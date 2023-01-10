@@ -13,6 +13,8 @@
     }
   );
 
+  // Menu accordeon
+
   // LANG DROPDOWN TOGGLE BUTTON
   $('.lang__toggle').click(function () {
     $(this).next('.menu__lang').slideToggle();
@@ -141,8 +143,10 @@
       navMenu.classList.add('show-menu')
     })
   }
-  if  (navClose){
-    navClose.addEventListener('click', ()=>)
+  if (navClose) {
+    navClose.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu')
+    })
   }
 
 })(window.jQuery);
