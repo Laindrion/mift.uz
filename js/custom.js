@@ -14,6 +14,14 @@
   );
 
   // Menu accordeon
+  const accordion = document.getElementsByClassName('nav-item');
+  let o;
+
+  for (o = 0; o < accordion.length; o++) {
+    accordion[o].addEventListener('click', function () {
+      this.classList.toggle('active')
+    })
+  }
 
   // LANG DROPDOWN TOGGLE BUTTON
   $('.lang__toggle').click(function () {
@@ -54,9 +62,7 @@
   hiddenElements.forEach((el) => observer.observe(el))
 
   // NAVBAR
-  $(".navbar-nav .nav-link").click(function () {
-    $(".navbar-collapse").collapse("hide");
-  });
+
 
   // MAP SLIDER
   $('.region__slider-box').slick({

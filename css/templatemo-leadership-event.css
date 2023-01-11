@@ -366,10 +366,28 @@ body {
     padding: 36px 30px;
   }
 
-  .menu__list {
-    /* position: static; */
+  .nav-item.active .dropdown:hover>.menu__list {
     opacity: 1;
     visibility: visible;
+  }
+
+  .nav-item.active .menu__list::before, .menu__list::after {
+    content: none;
+  }
+
+
+  .nav-item.active .menu__list {
+    height: auto;
+    transition: height 1s, visibility .3s, opacity .3s;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item.active .menu__list-item {
+    opacity: 1;
   }
 
   /* .dropdown:hover>.menu__list {

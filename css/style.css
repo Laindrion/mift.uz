@@ -242,7 +242,6 @@ p {
 .header__banner-disabled {
     background: none;
     padding: 0;
-
 }
 
 
@@ -285,7 +284,7 @@ p {
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-    max-height: 0;
+    height: 0;
     z-index: -1;
     transition: height .5s, visibility .1s, opacity .1s;
     box-shadow: 0px 34px 24px 0px rgba(34, 60, 80, 0.22);
@@ -319,7 +318,7 @@ p {
 .dropdown:hover>.menu__list {
     opacity: 1;
     visibility: visible;
-    max-height: 760px;
+    height: 760px;
     transition: height .5s, visibility .3s, opacity .3s;
 }
 
@@ -343,15 +342,6 @@ p {
     background-repeat: no-repeat;
     box-shadow: -26px 21px 23px -13px rgba(34, 60, 80, 0.2) inset;
 }
-
-/* .menu__list-title::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.5;
-} */
 
 .menu__list-title-text {
     padding-top: 65px;
