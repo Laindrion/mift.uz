@@ -206,7 +206,35 @@ p {
     height: auto;
 }
 
+/* .logo__wrapper-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 200px;
+    height: 70px;
+}
+
+.logo-2 {
+    width: 50px;
+    height: 70px;
+}
+
+.logo__text {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-family: Montserrat-Medium, sans-serif;
+    line-height: 21px;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 200px;
+} */
+
 /* MENU */
+.close-link-cover {
+    display: none;
+}
 
 .navbar-nav {
     display: flex;
@@ -270,6 +298,14 @@ p {
     display: flex;
     margin-right: 200px;
     padding: 24px 0;
+}
+
+.nav-item.active .menu__list {
+    display: block;
+}
+
+.menu__btn-img {
+    display: none;
 }
 
 .menu__list {
@@ -421,7 +457,6 @@ p {
 }
 
 .menu__list-link--active {
-    color: rgb(0, 38, 108);
     border: 1px solid #000;
 }
 
@@ -968,14 +1003,20 @@ p {
     z-index: -1;
 }
 
-.uzb__map {}
+.uzb__map svg {
+    width: 100%;
+    /* max-width: 400px; */
+    height: auto;
+}
+
+#uz-item {
+    position: relative;
+}
 
 .tabcontent {
     position: relative;
     display: none;
 }
-
-
 
 .tab__box {
     display: flex;
@@ -1025,8 +1066,153 @@ p {
     color: #fff;
 }
 
+.uzb__map-marker-cover {
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    top: 32rem;
+    left: 63rem;
+    cursor: pointer;
+}
+
+/* 
+Tashkent 
+    top: 32rem;
+    left: 63rem; 
+
+Namangan
+    top: 33rem;
+    left: 71rem;
+
+Andijan 
+    top: 35rem;
+    left: 77rem;
+
+Fergana 
+    top: 32rem;
+    left: 61rem;
+
+Sirdarya 
+    top: 36rem;
+    left: 60rem;
+
+Djizzakh
+    top: 36rem;
+    left: 54rem;
+
+Navoi
+    top: 30rem;
+    left: 39rem;
+
+Buxoro 
+    top: 39rem;
+    left: 36rem;
+
+Qoraqalpoqistion
+    top: 24rem;
+    left: 23rem;
+
+Xorazm 
+    top: 30rem;
+    left: 21rem;
+
+Qarshi
+    top: 47rem;
+    left: 48rem;
+
+Surxandaryo
+    top: 51rem;
+    left: 54rem;
+    
+*/
+
+.uzb__map-marker-cover::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    animation: circle1 5s infinite;
+    width: 60px;
+    height: 60px;
+}
+
+.uzb__map-marker-cover::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    animation: circle2 5s infinite;
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes circle1 {
+    0% {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+
+    50% {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transform: scale(1);
+        opacity: .5;
+    }
+
+    100% {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        border: 1px solid #1D92DD;
+        border-radius: 50%;
+        transform: scale(1.5);
+    }
+
+    50% {
+        border: 1px solid #1D92DD;
+        border-radius: 50%;
+        transform: scale(1.2);
+        opacity: .5;
+    }
+
+    100% {
+        border: 1px solid #1D92DD;
+        border-radius: 50%;
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.uzb__map-marker {
+    width: 100%;
+    height: auto;
+}
+
+/* .uzb__map::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/location.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    top: 25rem;
+    left: 62.4rem;
+    z-index: 100;
+} */
+
 .uzb__map svg {
     filter: drop-shadow(6px 9px 8px #000);
+    position: relative;
+
 }
 
 .uzb__map svg path {
@@ -1055,6 +1241,7 @@ p {
 .region__slider-box-2,
 .region__slider-box {
     max-width: 700px;
+    margin: 0 auto;
 }
 
 .region__item {
@@ -1069,6 +1256,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 .arrow__left-2, .arrow__right-2,
@@ -1375,7 +1563,6 @@ p {
 
 .item {
     padding: 0 50px;
-    border-right: 1px solid rgba(98, 106, 107, 0.287);
 }
 
 .links__slider-text {

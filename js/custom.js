@@ -13,15 +13,43 @@
         }
     );
 
-    // Menu accordeon
+    // Menu responsive
     const accordion = document.getElementsByClassName('nav-item');
     let o;
-
-    for (o = 0; o < accordion.length; o++) {
-        accordion[o].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
+    function myFunction(x) {
+        if (x.matches) {
+            for (o = 0; o < accordion.length; o++) {
+                accordion[o].addEventListener('click', function () {
+                    this.classList.toggle('active')
+                })
+            }
+            if (x.onchange) {
+                for (o = 0; o < accordion.length; o++) {
+                    accordion[o].addEventListener('click', function () {
+                        this.classList.toggle('non-active')
+                    })
+                }
+            }
+        }
     }
+    var x = window.matchMedia("(max-width: 1660px)")
+    myFunction(x)
+    x.addListener(myFunction)
+    console.log(x)
+
+    let burgerBtn = document.querySelector('.menu__btn-link');
+    let burgerCloseBtn = document.querySelector('.close-link-cover');
+    let navbar = document.querySelector('.navbar-nav');
+
+    burgerBtn.onclick = function () {
+        navbar.classList.add('active')
+        burgerCloseBtn.classList.add('active')
+    }
+    burgerCloseBtn.onclick = function () {
+        navbar.classList.remove('active')
+        burgerCloseBtn.classList.remove('active')
+    }
+
     // LANG DROPDOWN TOGGLE BUTTON
     $('.lang__toggle').click(function () {
         $(this).next('.menu__lang').slideToggle();
@@ -31,6 +59,7 @@
         var target = e.target;
         if (!$(target).is('.lang__toggle') && !$(target).parents().is('.lang__toggle')) { $('.menu__lang').slideUp(); }
     });
+
 
     // SEARCH BUTTON
     let searchBtn = document.querySelector('.header__find');
@@ -59,9 +88,6 @@
     })
     const hiddenElements = document.querySelectorAll('.hidden')
     hiddenElements.forEach((el) => observer.observe(el))
-
-    // NAVBAR
-
 
     // MAP SLIDER
     $('.region__slider-box').slick({
@@ -168,22 +194,5 @@
         prevArrow: $('.arrow__left'),
         nextArrow: $('.arrow__right')
     });
-
-    // Responsive section
-
-    let navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close');
-
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
-        })
-    }
-    if (navClose) {
-        navClose.addEventListener('click', () => {
-            navMenu.classList.remove('show-menu')
-        })
-    }
 
 })(window.jQuery);
