@@ -23,13 +23,9 @@
                     this.classList.toggle('active')
                 })
             }
-            if (x.onchange) {
-                for (o = 0; o < accordion.length; o++) {
-                    accordion[o].addEventListener('click', function () {
-                        this.classList.toggle('non-active')
-                    })
-                }
-            }
+        }
+        else {
+
         }
     }
     var x = window.matchMedia("(max-width: 1660px)")
@@ -37,6 +33,7 @@
     x.addListener(myFunction)
     console.log(x)
 
+    // burger
     let burgerBtn = document.querySelector('.menu__btn-link');
     let burgerCloseBtn = document.querySelector('.close-link-cover');
     let navbar = document.querySelector('.navbar-nav');
@@ -90,6 +87,15 @@
     hiddenElements.forEach((el) => observer.observe(el))
 
     // MAP SLIDER
+    let marker = document.getElementsByClassName("uzb__map-marker-cover");
+    let qr = document.getElementById("UZB356");
+    if (qr) {
+        qr.onclick = function () {
+            marker.style.top = '24rem'
+            marker.style.left = '23rem'
+        }
+    }
+    
     $('.region__slider-box').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

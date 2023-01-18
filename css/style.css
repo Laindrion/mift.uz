@@ -1076,8 +1076,12 @@ p {
     cursor: pointer;
 }
 
-/* 
-Tashkent 
+/*
+Tashkent gorod
+    top: 31rem;
+    left: 62rem;
+
+Tashkent oblast
     top: 32rem;
     left: 63rem; 
 
@@ -1132,7 +1136,7 @@ Surxandaryo
     position: absolute;
     left: -10px;
     top: -10px;
-    animation: circle1 5s infinite;
+    animation: circle1 3s infinite ease-in-out;
     width: 60px;
     height: 60px;
 }
@@ -1142,7 +1146,7 @@ Surxandaryo
     position: absolute;
     left: -10px;
     top: -10px;
-    animation: circle2 5s infinite;
+    animation: circle2 3s infinite ease-in-out;
     width: 60px;
     height: 60px;
 }
@@ -1281,7 +1285,7 @@ Surxandaryo
 
 .venue__info-member {
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 2px;
 }
 
@@ -1645,14 +1649,39 @@ Surxandaryo
 
 .footer__logo-wrapper {
     display: block;
-    max-width: 100px;
+    width: 500px;
     height: 100px;
 }
 
 .footer__logo {
-    display: block;
-    width: 500px;
+    width: 100%;
+    height: auto;
     padding-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background: #fff;
+    height: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border: .5px solid #000;
+    transition: .5s all;
+}
+
+.social-icon-link:hover {
+    background-color: #00d9ff;
+    border: transparent;
+    transition: .5s all;
 }
 
 .footer__box {
